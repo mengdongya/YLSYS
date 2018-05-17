@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--慢性病模块,病人信息输入页面,日期选择弹窗-->
+    <item android:color="#02bda4" android:state_checked="true" />
+    <item android:color="#404040" android:state_checked="false" />
+</selector>

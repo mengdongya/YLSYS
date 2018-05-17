@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.AddDeviceActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_connect_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:orientation="horizontal"
+        android:padding="@dimen/px5">
+
+        <include layout="@layout/base_back" />
+
+        <TextView
+            android:id="@+id/main_health_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px125"
+            android:text="@string/main_health_add"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/main_health_add_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px47">
+
+        <Button
+            android:id="@+id/connect_device"
+            android:layout_width="@dimen/px183"
+            android:layout_height="@dimen/px54"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/add_round_shape"
+            android:text="@string/connect_device"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px24" />
+
+        <TextView
+            android:id="@+id/connect_device_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/connect_device"
+            android:layout_marginTop="@dimen/px27"
+            android:gravity="center"
+            android:text="@string/connect_device_info"
+            android:textColor="@color/connectDeviceInfo"
+            android:textSize="@dimen/px11" />
+
+        <TextView
+            android:id="@+id/add_manuly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/connect_device_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px39"
+            android:text="@string/add_manuly"
+            android:textColor="@color/colorTooBar"
+            android:textSize="@dimen/px12" />
+
+        <View
+            android:layout_width="@dimen/px48"
+            android:layout_height="@dimen/px1"
+            android:layout_below="@+id/add_manuly"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorTooBar" />
+    </RelativeLayout>
+</LinearLayout>

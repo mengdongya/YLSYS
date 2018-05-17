@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:padding="@dimen/px5">
+
+    <ImageView
+        android:id="@+id/home_fragment_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px10"
+        android:src="@mipmap/main_medical_care"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/home_fragment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medical_care_one"
+            android:textColor="@color/toolTitle"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <TextView
+            android:id="@+id/home_fragment_descrion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medical_care_two"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_title_sp"/>
+    </LinearLayout>
+</LinearLayout>

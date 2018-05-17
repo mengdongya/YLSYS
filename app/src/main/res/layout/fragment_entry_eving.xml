@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.fragment.dayandnight.EntryNightFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10">
+
+        <TextView
+            android:layout_width="@dimen/px90"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="@string/systo_blood_press"
+            android:textColor="@color/connectDeviceInfo"
+            android:textSize="@dimen/px15" />
+
+        <EditText
+            android:id="@+id/systo_blood_press"
+            android:layout_width="@dimen/px180"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/manualSwitch"
+            android:textSize="@dimen/px12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10">
+
+        <TextView
+            android:layout_width="@dimen/px90"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="@string/diasto_blood_press"
+            android:textColor="@color/connectDeviceInfo"
+            android:textSize="@dimen/px15" />
+
+        <EditText
+            android:id="@+id/diasto_blood_press"
+            android:layout_width="@dimen/px180"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/manualSwitch"
+            android:textSize="@dimen/px12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10">
+
+        <TextView
+            android:layout_width="@dimen/px90"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="@string/heart_rate_title"
+            android:textColor="@color/connectDeviceInfo"
+            android:textSize="@dimen/px15" />
+
+        <EditText
+            android:id="@+id/heart_rate_title"
+            android:layout_width="@dimen/px180"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/manualSwitch"
+            android:textSize="@dimen/px12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10">
+
+        <TextView
+            android:layout_width="@dimen/px90"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="@string/blood_suger_before"
+            android:textColor="@color/connectDeviceInfo"
+            android:textSize="@dimen/px15" />
+
+        <EditText
+            android:id="@+id/blood_suger_before"
+            android:layout_width="@dimen/px180"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/manualSwitch"
+            android:textSize="@dimen/px12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10">
+
+        <TextView
+            android:layout_width="@dimen/px90"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="@string/blood_suger_after"
+            android:textColor="@color/connectDeviceInfo"
+            android:textSize="@dimen/px15" />
+
+        <EditText
+            android:id="@+id/blood_suger_after"
+            android:layout_width="@dimen/px180"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/manualSwitch"
+            android:textSize="@dimen/px12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10">
+
+        <TextView
+            android:layout_width="@dimen/px90"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="@string/blood_slipid_title"
+            android:textColor="@color/connectDeviceInfo"
+            android:textSize="@dimen/px15" />
+
+        <EditText
+            android:id="@+id/blood_slipid_content"
+            android:layout_width="@dimen/px180"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/manualSwitch"
+            android:textSize="@dimen/px12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20"
+        android:gravity="center"
+        android:text="坚持每日录入,数据录入更加精准"
+        android:textColor="@color/addAddressInfoOne" />
+
+</LinearLayout>

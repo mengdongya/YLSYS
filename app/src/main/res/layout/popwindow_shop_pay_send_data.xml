@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_send_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/common_line_horizontal"
+            android:contentDescription="@string/common_line_vertica" />
+
+        <TextView
+            android:id="@+id/tv_send_date_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/creat_order_check_send_data_1"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp" />
+
+        <ImageView
+            style="@style/common_line_horizontal"
+            android:contentDescription="@string/common_line_vertica" />
+
+        <TextView
+            android:id="@+id/tv_send_date_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/creat_order_check_send_data_2"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp" />
+
+        <ImageView
+            style="@style/common_line_horizontal"
+            android:contentDescription="@string/common_line_vertica" />
+
+        <TextView
+            android:id="@+id/tv_send_date_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/creat_order_check_send_data_3"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp" />
+
+        <ImageView
+            style="@style/common_line_horizontal"
+            android:contentDescription="@string/common_line_vertica" />
+    </LinearLayout>
+
+</LinearLayout>

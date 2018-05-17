@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.SudDiseActivity">
+
+    <include layout="@layout/include_title"/>
+
+    <LinearLayout
+        android:id="@+id/linear_sudden_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sudden_diaease_kinds"
+            android:layout_width="@dimen/px70"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sudden_diaease_content"
+            android:layout_width="@dimen/px0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

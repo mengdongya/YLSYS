@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.SpeciaExpertActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/specia_back"
+            android:layout_width="@dimen/px23"
+            android:layout_height="@dimen/px23"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px5"
+            android:src="@mipmap/top_back_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="专业特长"
+            android:textColor="@color/light_back"
+            android:textSize="@dimen/px20" />
+
+        <Button
+            android:id="@+id/sure_specia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:text="确定"
+            android:textColor="@color/colorTooBar"
+            android:textSize="@dimen/px15" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/chooseCityBackItem">
+
+        <EditText
+            android:id="@+id/specia_expert"
+            android:layout_width="@dimen/px300"
+            android:layout_height="@dimen/px200"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/px50"
+            android:background="@android:color/white"
+            android:gravity="top|left" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_backgroud_color"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialog_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="实时导航"
+        android:textColor="@color/text_color_gray"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ImageView
+        style="@style/common_line_horizontal"
+        android:contentDescription="@string/common_line_vertica" />
+
+    <TextView
+        android:id="@+id/dialog_baidu_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="百度地图"
+        android:textColor="@color/text_color_gray"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ImageView
+        style="@style/common_line_horizontal"
+        android:contentDescription="@string/common_line_vertica" />
+
+    <TextView
+        android:id="@+id/dialog_gaode_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="高德地图"
+        android:textColor="@color/text_color_gray"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/dialog_map_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="取消"
+        android:textColor="@color/text_color_gray"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</LinearLayout>

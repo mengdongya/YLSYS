@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/slow_dise_content_back"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/px15">
+
+    <TextView
+        android:id="@+id/text_result_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="慢性心里衰竭"
+        android:textColor="@color/slowDiseCont"
+        android:textSize="@dimen/px12" />
+</LinearLayout>

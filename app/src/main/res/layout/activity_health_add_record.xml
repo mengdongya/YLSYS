@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.AddRecourseCordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:padding="@dimen/px5">
+
+        <include layout="@layout/base_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="健康记录"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_title"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px56"
+                android:layout_marginLeft="@dimen/px10"
+                android:layout_marginRight="@dimen/px10"
+                android:layout_marginTop="@dimen/px5"
+                android:background="#e5f7f5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:text="甘油三酯："
+                    android:textColor="#202020"
+                    android:textSize="@dimen/item_text1"/>
+
+                <EditText
+                    android:id="@+id/triglycerides"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789."
+                    android:hint="请输入"
+                    android:textColor="#202020"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="mmol/L"
+                    android:textColor="@color/search_hint_text_color"
+                    android:textSize="@dimen/px16"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px56"
+                android:layout_marginLeft="@dimen/px10"
+                android:layout_marginRight="@dimen/px10"
+                android:layout_marginTop="@dimen/px5"
+                android:background="#e5f7f5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:text="低密度脂蛋白："
+                    android:textColor="#202020"
+                    android:textSize="@dimen/item_text1"/>
+
+                <EditText
+                    android:id="@+id/low_density_lipoprotein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789."
+                    android:hint="请输入"
+                    android:textColor="#202020"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="mmol/L"
+                    android:textColor="@color/search_hint_text_color"
+                    android:textSize="@dimen/px16"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px56"
+                android:layout_marginLeft="@dimen/px10"
+                android:layout_marginRight="@dimen/px10"
+                android:layout_marginTop="@dimen/px5"
+                android:background="#e5f7f5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:text="高密度脂蛋白："
+                    android:textColor="#202020"
+                    android:textSize="@dimen/item_text1"/>
+
+                <EditText
+                    android:id="@+id/high_density_lipoprotein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789."
+                    android:hint="请输入"
+                    android:textColor="#202020"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="mmol/L"
+                    android:textColor="@color/search_hint_text_color"
+                    android:textSize="@dimen/px16"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px10"
+                android:text="眼底检查"
+                android:textColor="#a4a4a4"
+                android:textSize="15sp"/>
+
+            <RadioGroup
+                android:id="@+id/number_periods"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px50"
+                android:layout_margin="@dimen/px10"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/one_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/period_back_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Ⅰ期"
+                    android:textColor="@drawable/period_text_color_selector"
+                    android:textSize="15sp"/>
+
+                <RadioButton
+                    android:id="@+id/two_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/period_back_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Ⅱ期"
+                    android:textColor="@drawable/period_text_color_selector"
+                    android:textSize="15sp"/>
+
+                <RadioButton
+                    android:id="@+id/three_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/period_back_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Ⅲ期"
+                    android:textColor="@drawable/period_text_color_selector"
+                    android:textSize="15sp"/>
+
+                <RadioButton
+                    android:id="@+id/recourse_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/period_back_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="正常"
+                    android:textColor="@drawable/period_text_color_selector"
+                    android:textSize="15sp"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px56"
+                android:layout_margin="@dimen/px5"
+                android:background="#e5f7f5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:text="接种情况"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/item_text1"/>
+
+                <TextView
+                    android:id="@+id/tv_inoculation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:layout_weight="1"
+                    android:hint="请选择"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="#202020"
+                    android:textColorHint="#b4c4c2"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px56"
+                android:layout_margin="@dimen/px5"
+                android:background="#e5f7f5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:text="避孕情况"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/item_text1"/>
+
+                <TextView
+                    android:id="@+id/tv_contraception"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px23"
+                    android:layout_marginTop="@dimen/px18"
+                    android:layout_weight="1"
+                    android:hint="请选择"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="#202020"
+                    android:textColorHint="#b4c4c2"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/condition_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px150"
+                android:layout_margin="@dimen/px10"
+                android:background="#e5f7f5"
+                android:gravity="top|left"
+                android:hint="请输入健康描述"
+                android:padding="@dimen/px5"
+                android:textColor="#202020"
+                android:textColorHint="#b4c4c2"/>
+
+            <Button
+                android:id="@+id/commit_recourse_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px46"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:layout_marginTop="@dimen/px5"
+                android:background="@drawable/bg_choose_green"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/px18"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

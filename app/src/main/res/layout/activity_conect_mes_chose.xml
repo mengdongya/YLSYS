@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.ContactChoseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px40"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/connect_chose_back"
+            android:layout_width="@dimen/px23"
+            android:layout_height="@dimen/px23"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px5"
+            android:src="@mipmap/top_back_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="联系方式"
+            android:textColor="@color/light_back"
+            android:textSize="@dimen/px20" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:background="@color/mainToolLine">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="请填写联系方式(三选一)"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="电话"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tele_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="电话"
+            android:inputType="number"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="微信"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/micro_letter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="微信"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="邮箱"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/mail_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="邮箱"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine" />
+
+    <Button
+        android:id="@+id/sure_ok"
+        android:layout_width="@dimen/px280"
+        android:layout_height="@dimen/px40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px25"
+        android:background="@drawable/round_shape_sign"
+        android:text="确认"
+        android:textColor="@android:color/white" />
+</LinearLayout>

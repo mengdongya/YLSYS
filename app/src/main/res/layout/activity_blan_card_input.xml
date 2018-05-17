@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.CardInputActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/px5">
+
+        <ImageView
+            android:id="@+id/blank_back"
+            android:layout_width="@dimen/px23"
+            android:layout_height="@dimen/px23"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px5"
+            android:src="@mipmap/top_back_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收款账户"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px20" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20"
+        android:background="@color/mainToolLine" />
+
+    <RelativeLayout
+        android:id="@+id/relative_chose_blank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px50">
+
+        <TextView
+            android:id="@+id/blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="银行"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bank_input_name"
+            android:layout_width="@dimen/px260"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_toRightOf="@+id/blank"
+            android:gravity="right"
+            android:hint="请选择银行" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/px20"
+            android:src="@mipmap/arow_right_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20"
+        android:background="@color/mainToolLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px50">
+
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="卡号"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/bank_card_number"
+            android:layout_width="@dimen/px260"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_toRightOf="@+id/card"
+            android:background="@null"
+            android:hint="请输入银行卡号" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20"
+        android:background="@color/mainToolLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px50">
+
+        <TextView
+            android:id="@+id/branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="支行"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/bank_branch_name"
+            android:layout_width="@dimen/px260"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_toRightOf="@+id/branch"
+            android:background="@null"
+            android:hint="请输入开户支行" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20"
+        android:background="@color/mainToolLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px50">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="姓名"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/card_hold_name"
+            android:layout_width="@dimen/px260"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_toRightOf="@+id/name"
+            android:background="@null"
+            android:hint="请输入真实姓名" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainToolLine">
+
+        <Button
+            android:id="@+id/sure_blank"
+            android:layout_width="@dimen/px280"
+            android:layout_height="@dimen/px40"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/px50"
+            android:background="@drawable/round_shape_sign"
+            android:text="确认"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+</LinearLayout>

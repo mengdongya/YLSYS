@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- 慢性病模块首页"按日"日期选择弹窗 确定 取消字体选择器-->
+    <item android:color="#02bda4" android:state_checked="true" />
+    <item android:color="#404040" android:state_checked="false" />
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  慢性病模块添加病人信息页面选择性别-->
+    <item android:color="#e8a6a6" android:state_checked="false" />
+    <item android:color="#0066ff" android:state_checked="true" />
+</selector>

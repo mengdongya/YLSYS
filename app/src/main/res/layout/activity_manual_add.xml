@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.ManuHealMesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:padding="@dimen/px5">
+
+        <include layout="@layout/base_back"/>
+
+        <TextView
+            android:id="@+id/manual_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_health_add"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/px11">
+
+        <TextView
+            android:id="@+id/up_load_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20"
+            android:text="@string/up_load_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px17"/>
+
+        <ImageView
+            android:id="@+id/up_load_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px13"
+            android:layout_toRightOf="@+id/up_load_info"
+            android:src="@mipmap/up_load_switch"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px6"
+        android:background="@color/mainLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px31"
+            android:text="@string/patient_name_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px20"/>
+
+        <EditText
+            android:id="@+id/patient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/manualSwitch"
+            android:textSize="@dimen/px12"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:layout_marginTop="@dimen/px5"
+        android:background="@color/mainToolLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px31"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/patient_gender_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px20"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginTop="@dimen/px3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/gender_men"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_men"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/px14"/>
+
+            <RadioButton
+                android:id="@+id/gender_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30"
+                android:text="@string/gender_women"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/px14"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/patient_age_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px31"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/patient_age_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px20"/>
+
+        <TextView
+            android:id="@+id/patient_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/patient_age_info"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px31"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/patient_weight_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px20"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px31"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/min_blood_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px20"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px31"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/max_blood_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px20"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px31"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/patient_height_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px20"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px31"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/patient_pulse_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px20"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px31"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/to_live_info"
+            android:textColor="@color/manualInfoContent"
+            android:textSize="@dimen/px20"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px336"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px12"
+        android:background="@color/mainToolLine"/>
+
+    <Button
+        android:id="@+id/submit_switch"
+        android:layout_width="@dimen/px79"
+        android:layout_height="@dimen/px33"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px55"
+        android:background="@drawable/submit_shape"
+        android:text="提交"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

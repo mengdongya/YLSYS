@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ededed"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/voice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:padding="@dimen/px5">
+
+        <ImageView
+            android:id="@+id/iv_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_top_finsh" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="自助诊疗"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px20"/>
+
+        <TextView
+            android:id="@+id/tv_activity_voice_connect_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp10"
+            android:text="关闭诊疗"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_voice_content_w"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/comunicat_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:id="@+id/v_voice_content_d"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_down"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_self_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px50"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px5"
+            android:paddingRight="@dimen/px5">
+
+            <ImageView
+                android:id="@+id/self_voice"
+                android:layout_width="@dimen/px30"
+                android:layout_height="@dimen/px30"
+                android:layout_gravity="center"
+                android:src="@mipmap/self_voice"/>
+
+            <EditText
+                android:id="@+id/into_text"
+                android:layout_width="@dimen/px0"
+                android:layout_height="@dimen/px30"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px10"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape_into"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/self_send"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px31"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px10"
+                android:background="@drawable/round_shape_send"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="发送"
+                android:textColor="@android:color/white"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/main_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#484848"
+        android:visibility="gone"/>
+</LinearLayout>

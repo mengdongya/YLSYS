@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/add_doctor_item"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_message_manager_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_item_manage"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_fragment_message_manager_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:background="@drawable/yl_message_icon"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_fragment_message_manager_icon">
+
+            <TextView
+                android:id="@+id/tv_fragment_message_manager_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息提醒"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@+id/tv_notice_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_fragment_message_manager_remind"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="你有最新消息点击查看!"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/arrow_right_all"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/mainToolLine"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_message_manager_validate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_item_manage"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_fragment_message_manager_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:background="@drawable/yl_validate_icon"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_fragment_message_manager_icon2">
+
+            <TextView
+                android:id="@+id/tv_fragment_message_manager_remind2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证消息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@+id/tv_add_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_fragment_message_manager_remind2"
+                android:layout_marginTop="@dimen/dp5"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/arrow_right_all"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/mainToolLine"/>
+</LinearLayout>

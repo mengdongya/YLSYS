@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <DatePicker
+        android:id="@+id/chose_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner" />
+
+    <RadioGroup
+        android:id="@+id/chose_year_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/chose_year_cancel"
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@drawable/chose_date_selector"
+            android:textSize="@dimen/px17" />
+
+        <RadioButton
+            android:id="@+id/chose_year_sure"
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@drawable/chose_date_selector"
+            android:textSize="@dimen/px17" />
+    </RadioGroup>
+</LinearLayout>

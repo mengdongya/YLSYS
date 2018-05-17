@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <!-- 引用标题栏布局 -->
+
+    <include layout="@layout/include_shop_market_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/address_lable_name"
+                android:textColor="@color/text_color_gray" />
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/common_line_horizontal"
+            android:contentDescription="@string/common_line_vertica" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/address_lable_phone"
+                android:textColor="@color/text_color_gray" />
+
+            <EditText
+                android:id="@+id/ed_phone"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/common_line_horizontal"
+            android:contentDescription="@string/common_line_vertica" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/address_lable_city"
+                android:textColor="@color/text_color_gray" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:drawableEnd="@drawable/arrow_right_all"
+                android:drawableRight="@drawable/arrow_right_all"
+                android:gravity="center_vertical"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/common_line_horizontal"
+            android:contentDescription="@string/common_line_vertica" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/address_lable_address"
+                android:textColor="@color/text_color_gray" />
+
+            <EditText
+                android:id="@+id/ed_address"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:background="@color/transparent"
+                android:gravity="top"
+                android:inputType="none"
+                android:minLines="4"
+                android:text=""
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/common_line_horizontal"
+            android:contentDescription="@string/common_line_vertica" />
+
+        <!-- android:drawableRight="@drawable/address_checked_status" -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="@string/address_lable_default"
+                android:textColor="@color/text_color_gray" />
+
+            <Button
+                android:id="@+id/btn_adddefault_address"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawableRight="@drawable/btn_default_ok_up" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/address_save"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

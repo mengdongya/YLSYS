@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:padding="@dimen/px10">
+
+    <ImageView
+        android:id="@+id/mine_logo"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="@dimen/px25"
+        android:src="@mipmap/mine_order"/>
+
+    <TextView
+        android:id="@+id/mine_title"
+        android:layout_width="@dimen/px0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px15"
+        android:layout_toRightOf="@+id/mine_logo"
+        android:layout_weight="1"
+        android:text="@string/main_mine_order"
+        android:textColor="@color/mineTool"
+        android:textSize="@dimen/sp16"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px15"
+        android:src="@mipmap/arrow_right"/>
+</LinearLayout>

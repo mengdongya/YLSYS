@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sudden_treat_kind"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp10"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/sudden_diaease_logo"
+        android:layout_width="@dimen/px50"
+        android:layout_height="@dimen/px50"
+        android:scaleType="fitXY"
+        android:src="@mipmap/sudden_disease_one" />
+
+    <TextView
+        android:id="@+id/sudden_diaease_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5"
+        android:textColor="@color/mineTool"
+        android:textSize="@dimen/px11" />
+</LinearLayout>

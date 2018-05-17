@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/add_doctor_item"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_validate_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:background="@drawable/link_icon"/>
+
+        <TextView
+            android:id="@+id/tv_item_validate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_toRightOf="@+id/iv_item_validate_icon"
+            android:text="姓名:AAAA"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"/>
+
+        <TextView
+            android:id="@+id/tv_item_validate_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_validate_name"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_toRightOf="@+id/iv_item_validate_icon"
+            android:text="请求添加好友"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14"/>
+
+        <TextView
+            android:id="@+id/tv_item_validate_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_validate_phone"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_toRightOf="@+id/iv_item_validate_icon"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_validate_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_shape_link"
+                android:clickable="true"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:paddingTop="3dp"
+                android:text="同意"
+                android:textColor="@color/colorTooBar"/>
+
+            <TextView
+                android:id="@+id/tv_item_validate_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/round_shape_validate"
+                android:clickable="true"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:paddingTop="3dp"
+                android:text="拒绝"
+                android:textColor="#b88874"/>
+
+            <TextView
+                android:id="@+id/tv_is_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp16"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/mainToolLine"/>
+</LinearLayout>

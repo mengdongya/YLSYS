@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.HospitalDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/linear_hosp_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorTooBar"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/px15"
+            android:paddingRight="@dimen/dp10"
+            android:paddingTop="@dimen/dp10"
+            android:src="@mipmap/back_top_finsh"/>
+
+        <TextView
+            android:id="@+id/go_hosipiatl_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/go_hosipiatl_one"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/big_title_sp"/>
+
+        <Button
+            android:id="@+id/hosp_det_intell_treatment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@android:color/transparent"
+            android:text="@string/intellg_treatment"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px14"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/px10">
+
+                <ImageView
+                    android:id="@+id/hospital_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/hospital_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:layout_marginTop="@dimen/px4"
+                            android:text="上海解放军医院"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/middle_title_sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_hospital_collect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:background="@drawable/bg_orange"
+                            android:paddingBottom="@dimen/dp5"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingRight="@dimen/dp10"
+                            android:paddingTop="@dimen/dp5"
+                            android:text="收藏"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_title_sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_hospital_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:orientation="horizontal"/>
+
+                        <TextView
+                            android:id="@+id/tv_hospital_appoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/slowDiseaseLine"
+                            android:textSize="@dimen/px10"/>
+                    </RelativeLayout>
+
+                    <store.chinaotec.com.medicalcare.view.MySetRatingBar
+                        android:id="@+id/hospital_detail_stars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:layout_marginTop="@dimen/dp5"
+                        app:starCount="5"
+                        app:starEmpty="@mipmap/five_star_dark"
+                        app:starFill="@mipmap/five_star_light"
+                        app:starHalf="@mipmap/five_star_half"
+                        app:starImageSize="@dimen/px15"
+                        app:starPadding="@dimen/px2"
+                        app:starStep="3.5"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bus_route"
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableTop="@mipmap/bus_route"
+                    android:gravity="center"
+                    android:text="@string/bus_route"
+                    android:textSize="@dimen/middle_title_sp"/>
+
+                <Button
+                    android:id="@+id/regist_doctor"
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableTop="@mipmap/regist_doctor"
+                    android:gravity="center"
+                    android:text="@string/regist_doctor"
+                    android:textSize="@dimen/middle_title_sp"/>
+
+                <Button
+                    android:id="@+id/guide_doctor"
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableTop="@mipmap/guide_doctor"
+                    android:gravity="center"
+                    android:text="@string/guide_doctor"
+                    android:textSize="@dimen/middle_title_sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px8"
+                android:layout_marginTop="@dimen/px15"
+                android:background="@color/medicRemindLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginTop="@dimen/px12"
+                    android:text="@string/hospital_introduct"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/middle_title_sp"/>
+
+                <TextView
+                    android:id="@+id/hospital_introduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:layout_marginTop="@dimen/px6"
+                    android:text="上海解放军医院,军区大医院的翘楚"
+                    android:textColor="@color/medicalRemindCont"
+                    android:textSize="@dimen/small_title_sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px8"
+                android:layout_marginTop="@dimen/px15"
+                android:background="@color/medicRemindLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px14"
+                    android:layout_marginTop="@dimen/px12"
+                    android:text="专家栏目"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/middle_title_sp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_expert_column"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp15"/>
+
+                <TextView
+                    android:id="@+id/tv_hospital_doctor_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="点击查看跟多"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="@dimen/px14"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px8"
+                android:layout_marginTop="@dimen/px15"
+                android:background="@color/medicRemindLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px14"
+                    android:layout_marginTop="@dimen/px12"
+                    android:text="@string/hospital_real"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/middle_title_sp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/hospitalRealRecycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px4"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

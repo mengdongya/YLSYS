@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.MineSettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/linear_mine_set"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px40"
+        android:background="@color/colorTooBar">
+
+        <ImageView
+            android:id="@+id/mine_setting_back"
+            android:layout_width="@dimen/px30"
+            android:layout_height="@dimen/px28"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/back_top_finsh"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_mine_setting"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_message_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px14"
+        android:paddingTop="@dimen/px14">
+
+        <TextView
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px16"
+            android:layout_weight="1"
+            android:text="@string/message_notice"
+            android:textColor="@color/setingTitle"
+            android:textSize="@dimen/px15"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px23"
+            android:src="@mipmap/arow_right_gray"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/regisHospitLine"/>
+
+    <LinearLayout
+        android:id="@+id/linear_remove_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px14"
+        android:paddingTop="@dimen/px14">
+
+        <TextView
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px16"
+            android:layout_weight="1"
+            android:text="@string/remove_cash"
+            android:textColor="@color/setingTitle"
+            android:textSize="@dimen/px15"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px23"
+            android:src="@mipmap/arow_right_gray"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/medicRemindLine"/>
+
+    <LinearLayout
+        android:id="@+id/linear_secret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px14"
+        android:paddingTop="@dimen/px14"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px16"
+            android:layout_weight="1"
+            android:text="@string/secret"
+            android:textColor="@color/setingTitle"
+            android:textSize="@dimen/px15"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px23"
+            android:src="@mipmap/arow_right_gray"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px9"
+        android:layout_marginTop="@dimen/px14"
+        android:background="@color/medicRemindLine"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/regisHospitLine"/>
+
+    <LinearLayout
+        android:id="@+id/linear_help_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px14"
+        android:paddingTop="@dimen/px14">
+
+        <TextView
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px16"
+            android:layout_weight="1"
+            android:text="@string/help_feedback"
+            android:textColor="@color/setingTitle"
+            android:textSize="@dimen/px15"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px23"
+            android:src="@mipmap/arow_right_gray"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/regisHospitLine"/>
+
+    <LinearLayout
+        android:id="@+id/linear_statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px14"
+        android:paddingTop="@dimen/px14">
+
+        <TextView
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px16"
+            android:layout_weight="1"
+            android:text="@string/statement"
+            android:textColor="@color/setingTitle"
+            android:textSize="@dimen/px15"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px23"
+            android:src="@mipmap/arow_right_gray"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/regisHospitLine"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px40"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@color/medicRemindLine"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/version_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/now_version"
+            android:textColor="@color/setingTitle"
+            android:textSize="@dimen/px15"/>
+
+        <TextView
+            android:id="@+id/now_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_toRightOf="@+id/version_title"
+            android:text="1.0"
+            android:textColor="@color/setingTitle"
+            android:textSize="@dimen/px15"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="@dimen/px332"
+        android:layout_height="@dimen/px40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px40"
+        android:background="@drawable/round_shape_sign_out"
+        android:text="@string/sign_out"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px18"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.ModiUserNameActivity">
+
+    <LinearLayout
+        android:id="@+id/relative_see_doctor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:orientation="horizontal"
+        android:padding="@dimen/px5">
+
+        <include layout="@layout/base_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px110"
+            android:text="@string/change_user_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/change_username_promit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px24"
+        android:layout_marginTop="@dimen/px15"
+        android:text="@string/change_username_promit"
+        android:textColor="@color/medicalRemindCont"
+        android:textSize="@dimen/px10" />
+
+    <EditText
+        android:id="@+id/change_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px24"
+        android:text="失控姐"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/px13" />
+
+    <Button
+        android:id="@+id/sure_come_back"
+        android:layout_width="@dimen/px98"
+        android:layout_height="@dimen/px30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:text="@string/sure_come_back"
+        android:textColor="@android:color/white" />
+</LinearLayout>

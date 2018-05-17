@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.HealthInfoAddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:padding="@dimen/px5">
+
+        <include layout="@layout/base_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px56"
+        android:layout_margin="@dimen/px10"
+        android:background="#e5f7f5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:text="收缩压"
+            android:textColor="#202020"
+            android:textSize="@dimen/item_text1" />
+
+        <EditText
+            android:id="@+id/syst_blood_prese"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="40～250"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textColor="#202020"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px56"
+        android:layout_margin="@dimen/px10"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginTop="@dimen/px10"
+        android:background="#e5f7f5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:text="舒张压"
+            android:textColor="#202020"
+            android:textSize="@dimen/item_text1" />
+
+        <EditText
+            android:id="@+id/diast_blood_prese"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="40～250"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textColor="#202020"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px56"
+        android:layout_margin="@dimen/px10"
+        android:background="#e5f7f5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:text="心率"
+            android:textColor="#202020"
+            android:textSize="@dimen/item_text1" />
+
+        <EditText
+            android:id="@+id/heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="30～180"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textColor="#202020"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px56"
+        android:layout_margin="@dimen/px10"
+        android:background="#e5f7f5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:text="血糖"
+            android:textColor="#202020"
+            android:textSize="@dimen/item_text1" />
+
+        <EditText
+            android:id="@+id/blood_sugar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="0～12"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textColor="#202020"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px56"
+        android:layout_margin="@dimen/px10"
+        android:background="#e5f7f5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:text="体重"
+            android:textColor="#202020"
+            android:textSize="@dimen/item_text1" />
+
+        <EditText
+            android:id="@+id/blood_fat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px23"
+            android:layout_marginTop="@dimen/px18"
+            android:layout_weight="1"
+            android:hint="0～120"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:digits="0123456789."
+            android:textColor="#202020"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px87"
+        android:layout_marginTop="@dimen/px15"
+        android:text="坚持每日录入，数据录入更加精准"
+        android:textColor="#8a8a8a"
+        android:textSize="@dimen/px12" />
+
+    <Button
+        android:id="@+id/comit_health_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px46"
+        android:layout_margin="@dimen/px15"
+        android:background="@drawable/bg_choose_green"
+        android:text="提交"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px18" />
+</LinearLayout>

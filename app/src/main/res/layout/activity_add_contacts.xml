@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.ContaAddActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_add_contacts_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/colorTooBar">
+
+        <include layout="@layout/base_back" />
+
+        <TextView
+            android:id="@+id/edit_contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px120"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20" />
+
+        <Button
+            android:id="@+id/save_contact_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px110"
+            android:background="@android:color/transparent"
+            android:text="@string/save_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_from_contacts"
+        android:layout_width="@dimen/px140"
+        android:layout_height="@dimen/px45"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px35"
+        android:background="@drawable/round_shape_add_contacts"
+        android:text="@string/from_contacts"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px13" />
+
+    <TextView
+        android:id="@+id/tv_add_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px28"
+        android:layout_marginTop="@dimen/px50"
+        android:text="@string/add_manuly"
+        android:textColor="@color/myDeviceTile"
+        android:textSize="@dimen/px15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px24"
+        android:layout_marginTop="@dimen/px10"
+        android:background="@color/myDeviceTile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px98"
+        android:layout_marginTop="@dimen/px26"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts_name"
+            android:textColor="@color/myDeviceTile"
+            android:textSize="@dimen/px15" />
+
+        <EditText
+            android:id="@+id/contact_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px21"
+            android:background="@null"
+            android:textColor="@color/myDeviceTile"
+            android:textSize="@dimen/px15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px77"
+        android:layout_marginTop="@dimen/px10"
+        android:background="@color/myDeviceTile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px98"
+        android:layout_marginTop="@dimen/px26"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts_phone"
+            android:textColor="@color/myDeviceTile"
+            android:textSize="@dimen/px15" />
+
+        <EditText
+            android:id="@+id/contact_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px21"
+            android:background="@null"
+            android:textColor="@color/myDeviceTile"
+            android:textSize="@dimen/px15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginLeft="@dimen/px77"
+        android:layout_marginTop="@dimen/px10"
+        android:background="@color/myDeviceTile" />
+
+    <Button
+        android:id="@+id/delete_contacts"
+        android:layout_width="@dimen/px90"
+        android:layout_height="@dimen/px35"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px45"
+        android:background="@drawable/round_shape_red"
+        android:text="@string/delete"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px13"
+        android:visibility="gone"/>
+</LinearLayout>

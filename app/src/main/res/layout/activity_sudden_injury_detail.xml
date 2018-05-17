@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:padding="@dimen/px5">
+
+        <ImageView
+            android:id="@+id/iv_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px3"
+            android:src="@mipmap/back_top_finsh" />
+
+        <TextView
+            android:id="@+id/tv_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/wv_sudden_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/px3"
+                        android:layout_height="@dimen/px25"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/px15"
+                        android:layout_marginTop="@dimen/px10"
+                        android:background="@drawable/line_shape" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px5"
+                        android:layout_marginTop="@dimen/px15"
+                        android:text="求救"
+                        android:textColor="@color/colorTooBar"
+                        android:textSize="@dimen/px14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px1"
+                    android:layout_marginTop="@dimen/px6"
+                    android:background="@color/addAddressInfoTwo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="@dimen/px10"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/online_doctor"
+                        android:layout_width="@dimen/px0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="@dimen/dp5"
+                        android:drawableTop="@mipmap/qiujiu"
+                        android:gravity="center_horizontal"
+                        android:text="求救医生"
+                        android:textSize="@dimen/px11" />
+
+                    <Button
+                        android:id="@+id/intellg_treatment"
+                        android:layout_width="@dimen/px0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="@dimen/dp5"
+                        android:drawableTop="@mipmap/zhineng"
+                        android:gravity="center_horizontal"
+                        android:text="@string/intellg_treatment"
+                        android:textSize="@dimen/px11" />
+
+                    <Button
+                        android:id="@+id/one_call_help"
+                        android:layout_width="@dimen/px0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="@dimen/dp5"
+                        android:drawableTop="@mipmap/yijian"
+                        android:gravity="center_horizontal"
+                        android:text="@string/one_call_help"
+                        android:textSize="@dimen/px11" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

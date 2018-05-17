@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_forum_reply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1298e18927"
+        android:textColor="#30427c"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_forum_reply_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:layout_marginLeft="5dp"
+        android:text="啊快速减肥好的撒快乐的发货记录发爱上款到即发时空裂缝卡思乐发送给好啊上看到姐夫哈是快递发货"
+        android:textColor="#424242"
+        android:textSize="13sp" />
+
+
+</LinearLayout>

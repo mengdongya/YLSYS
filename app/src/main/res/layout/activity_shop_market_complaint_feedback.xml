@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <!-- 引用标题栏布局 -->
+
+    <include layout="@layout/include_shop_market_title" />
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:text="欢迎留下您宝贵的意见"
+        android:textColor="@color/text_color_gray"
+        android:textSize="16sp" />-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/ed_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/search_edittext_hint_freeback"
+            android:lines="9"
+            android:maxLength="100"
+            android:maxLines="9"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/edit_hint_color"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_feedbace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:text="@string/hint_freeback"
+            android:textColor="@color/text_color_gray" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/ed_phone_or_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="@string/search_edittext_hint_phone_or_email"
+        android:inputType="none"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/edit_hint_color"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_bg"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/btn_submit"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

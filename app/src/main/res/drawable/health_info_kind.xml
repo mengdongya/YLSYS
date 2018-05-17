@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--慢性病模块首页 血压  心率 血糖 血脂选中背景-->
+    <solid android:color="#31bcd0" />
+    <corners android:radius="@dimen/px4" />
+</shape>

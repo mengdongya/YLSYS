@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.PretentPostCareActivity">
+
+    <include layout="@layout/include_title"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120"
+        android:background="@mipmap/top_back"
+        android:padding="@dimen/px5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/sign_back"
+            android:layout_width="@dimen/px35"
+            android:layout_height="@dimen/px35"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/px13"
+            android:layout_marginTop="@dimen/px5"
+            android:src="@mipmap/care_left_arrow"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/sign_back"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优生优育"
+                android:textColor="#4c373d"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px5"
+                android:text="女性助手,baby保姆"
+                android:textColor="#4c373d"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_jingqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/px10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:src="@mipmap/jingqi"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginTop="@dimen/px10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="经期"
+                        android:textColor="@color/toolTitle"
+                        android:textSize="@dimen/middle_title_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="经期有困难  这里一站式解决"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/small_title_sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/mainToolLine"/>
+
+            <LinearLayout
+                android:id="@+id/linear_huaiyun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/px10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:src="@mipmap/huaiyun"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginTop="@dimen/px10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="怀孕"
+                        android:textColor="@color/toolTitle"
+                        android:textSize="@dimen/middle_title_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="怀孕讲技巧  这里告诉你"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/small_title_sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/mainToolLine"/>
+
+            <LinearLayout
+                android:id="@+id/linear_fenyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px10"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/px10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:src="@mipmap/fenmian"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginTop="@dimen/px10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分娩"
+                        android:textColor="@color/toolTitle"
+                        android:textSize="@dimen/middle_title_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="还在扒分娩教学? 这里堪称教材基地"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/small_title_sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/mainToolLine"/>
+
+            <LinearLayout
+                android:id="@+id/linear_weiyang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/px10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:src="@mipmap/weiyang"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginTop="@dimen/px10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="喂养"
+                        android:textColor="@color/toolTitle"
+                        android:textSize="@dimen/middle_title_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="营养,身心,时刻关注成长"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/small_title_sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/mainToolLine"/>
+
+            <LinearLayout
+                android:id="@+id/linear_jiezhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/px10">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:src="@mipmap/jiezhong"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginTop="@dimen/px10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="接种"
+                        android:textColor="@color/toolTitle"
+                        android:textSize="@dimen/middle_title_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="想当妈妈？我们有办法"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/small_title_sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/mainToolLine"/>
+
+            <LinearLayout
+                android:id="@+id/linear_biyun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/px10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:src="@mipmap/biyun"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginTop="@dimen/px10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="避孕"
+                        android:textColor="@color/toolTitle"
+                        android:textSize="@dimen/middle_title_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最新最全的的便捷避孕方法"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/small_title_sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/arrow_right"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:layout_marginTop="@dimen/px5"
+                android:background="#f0f0f0"
+                android:paddingLeft="@dimen/px10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:text="产院 月子中心推荐"
+                    android:textColor="@color/toolTitle"
+                    android:textSize="@dimen/big_title_sp"/>
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/month_center_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp5"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

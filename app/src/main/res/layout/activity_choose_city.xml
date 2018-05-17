@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+
+    <ScrollView
+        android:id="@+id/choose_city_scroolview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_choose_one"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mainToolLine">
+
+                <TextView
+                    android:id="@+id/now_location_city_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px25"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_marginTop="@dimen/px5"
+                    android:text="@string/now_location_city"
+                    android:textColor="@color/chooseCityBackContTwo"
+                    android:textSize="@dimen/px13"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px58"
+                    android:background="@color/chooseCityBackItem"/>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/px75"
+                    android:layout_height="@dimen/px44"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_marginTop="@dimen/px5"
+                    android:background="@android:color/white"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/now_location_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/chooseCityBackContOne"
+                        android:textSize="@dimen/px13"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mainToolLine">
+
+                <TextView
+                    android:id="@+id/hot_city_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px25"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_marginTop="@dimen/px5"
+                    android:text="@string/hot_city_title"
+                    android:textColor="@color/chooseCityBackContTwo"
+                    android:textSize="@dimen/px13"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/chooseCityBackItem">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/hot_city_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_marginTop="@dimen/px5"
+                    android:layout_marginBottom="@dimen/dp15"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px25"
+                    android:background="@color/chooseCityBackLine"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px25"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_marginTop="@dimen/px5"
+                    android:textColor="@color/chooseCityBackContTwo"
+                    android:textSize="@dimen/px13"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_choose_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px45"
+        android:background="@color/chooseCityBackLine">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_marginRight="@dimen/px10"
+            android:layout_marginTop="@dimen/px10"
+            android:background="@mipmap/chose_sear_back">
+
+            <ImageView
+                android:id="@+id/choose_search_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px65"
+                android:layout_marginTop="@dimen/px10"
+                android:src="@mipmap/search_logo_gray"/>
+
+            <EditText
+                android:id="@+id/choose_city_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px8"
+                android:layout_marginLeft="@dimen/px10"
+                android:layout_marginTop="@dimen/px8"
+                android:layout_toRightOf="@+id/choose_search_logo"
+                android:background="@null"
+                android:hint="@string/search_city_promit"
+                android:textColorHint="@color/userPhone"
+                android:textSize="@dimen/px14"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

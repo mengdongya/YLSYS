@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/hot_city_relative"
+        android:layout_width="@dimen/px96"
+        android:layout_height="@dimen/px36"
+        android:layout_marginTop="@dimen/px10"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/hot_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海市"
+            android:textColor="@color/chooseCityBackContOne"
+            android:textSize="@dimen/px15" />
+    </RelativeLayout>
+</RelativeLayout>

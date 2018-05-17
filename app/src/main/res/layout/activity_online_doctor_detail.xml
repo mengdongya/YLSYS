@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.DoctorDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/linear_online_doctor_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/colorTooBar">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="back"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/px15"
+            android:paddingRight="@dimen/dp10"
+            android:paddingTop="@dimen/dp10"
+            android:src="@mipmap/back_top_finsh"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/online_doctor_one"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/big_title_sp"/>
+
+        <TextView
+            android:id="@+id/doctor_detail_intel_treat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@android:color/transparent"
+            android:text="@string/intellg_treatment"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/middle_title_sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/doctor_photo"
+            android:layout_width="@dimen/px78"
+            android:layout_height="@dimen/px79"
+            android:padding="@dimen/px10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px12"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/middle_title_sp"
+                tools:text="医生名字"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px3"
+                android:orientation="horizontal">
+
+                <store.chinaotec.com.medicalcare.view.MySetRatingBar
+                    android:id="@+id/dotor_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px2"
+                    app:starCount="5"
+                    app:starEmpty="@mipmap/five_star_dark"
+                    app:starFill="@mipmap/five_star_light"
+                    app:starImageSize="@dimen/px15"
+                    app:starPadding="@dimen/px3"
+                    app:starStep="3"/>
+
+                <TextView
+                    android:id="@+id/tv_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:background="@drawable/bg_orange"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="收藏"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_title_sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_title_sp"
+                tools:text="医院名字"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_doctor_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"/>
+
+                <TextView
+                    android:id="@+id/patient_advice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginRight="@dimen/px10"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/middle_title_sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px15">
+
+        <LinearLayout
+            android:id="@+id/linear_conect_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px35"
+            android:background="@mipmap/connect_back"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px7"
+                android:text="@string/conect_phone"
+                android:textColor="@color/onLineDoctorContTitle"
+                android:textSize="@dimen/small_title_sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp5"
+                android:src="@mipmap/connect_by_phone"/>
+
+            <TextView
+                android:id="@+id/tv_doctor_phone_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px8"
+                android:textColor="@color/onLineDoctorContTitle"
+                android:textSize="@dimen/small_title_sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_conect_SMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:background="@mipmap/connect_back"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px7"
+                android:text="@string/conect_SMS"
+                android:textColor="@color/onLineDoctorContTitle"
+                android:textSize="@dimen/small_title_sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp5"
+                android:src="@mipmap/connect_by_sms"/>
+
+            <TextView
+                android:id="@+id/tv_doctor_pic_ask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px8"
+                android:textColor="@color/onLineDoctorContTitle"
+                android:textSize="@dimen/small_title_sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_conect_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:background="@mipmap/connect_back"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px7"
+                android:text="@string/conect_video"
+                android:textColor="@color/onLineDoctorContTitle"
+                android:textSize="@dimen/small_title_sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp5"
+                android:src="@mipmap/connect_by_video"/>
+
+            <TextView
+                android:id="@+id/tv_doctor_video_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px8"
+                android:textColor="@color/onLineDoctorContTitle"
+                android:textSize="@dimen/small_title_sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/online_doctor_detail_line_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px6"
+        android:background="@color/mainToolLine"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/px14"
+        android:text="@string/doctor_profile"
+        android:textColor="@color/doctorProfile"
+        android:textSize="@dimen/middle_title_sp"/>
+
+    <TextView
+        android:id="@+id/tv_doctor_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="@string/doctor_profile_info"
+        android:textColor="@color/regisHospitCont"
+        android:textSize="@dimen/small_title_sp"/>
+
+    <Button
+        android:id="@+id/want_sign"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp50"
+        android:layout_marginRight="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@drawable/round_shape_sign"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px17"/>
+
+    <TextView
+        android:id="@+id/tv_sign_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px10"
+        android:textColor="@color/healthDietBack"
+        android:textSize="@dimen/middle_title_sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/agree_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已经阅读并同意"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <TextView
+            android:id="@+id/sign_proto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:text="《最终用户协议》"
+            android:textSize="@dimen/middle_title_sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/online_doctor_detail_line_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px6"
+        android:layout_marginTop="@dimen/px13"
+        android:background="@color/mainToolLine"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/px10"
+        android:text="@string/patient_evalution"
+        android:textColor="@color/doctorProfile"
+        android:textSize="@dimen/middle_title_sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/patienEvauRecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginTop="@dimen/px5"/>
+</LinearLayout>

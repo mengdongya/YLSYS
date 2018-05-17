@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.UserRegNextActivity">
+
+    <include layout="@layout/include_title"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:background="@color/noticeToolBack">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="基本信息(必填)"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/middle_title_sp"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="姓名"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <EditText
+            android:id="@+id/inout_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请填写姓名"
+            android:textSize="@dimen/small_title_sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/sex_title"
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="性别"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <TextView
+            android:id="@+id/sex_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_toRightOf="@+id/sex_title"
+            android:hint="请选择性别"
+            android:textSize="@dimen/small_title_sp"/>
+
+        <ImageView
+            android:id="@+id/sex_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px10"
+            android:src="@mipmap/arrow_right"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <RelativeLayout
+        android:id="@+id/relatiuve_born_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/born_title"
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="出生日期"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <TextView
+            android:id="@+id/born_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_toRightOf="@+id/born_title"
+            android:hint="请选择出生日期"
+            android:textSize="@dimen/small_title_sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px10"
+            android:src="@mipmap/arrow_right"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="年龄"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <TextView
+            android:id="@+id/user_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="民族"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <EditText
+            android:id="@+id/input_nation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请填写民族"
+            android:textSize="@dimen/small_title_sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="职业"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <EditText
+            android:id="@+id/input_career"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请填写职业"
+            android:textSize="@dimen/small_title_sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="常住地"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <EditText
+            android:id="@+id/input_tolive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请填常住地"
+            android:textSize="@dimen/small_title_sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="身高"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <EditText
+            android:id="@+id/input_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请填写身高"
+            android:textSize="@dimen/small_title_sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="体重"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <EditText
+            android:id="@+id/input_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请填写体重"
+            android:textSize="@dimen/small_title_sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_connect_inform"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/connect_title"
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="联系方式"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <TextView
+            android:id="@+id/connect_inform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_toRightOf="@+id/connect_title"
+            android:hint="请选择联系方式"
+            android:textSize="@dimen/small_title_sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px10"
+            android:src="@mipmap/arrow_right"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:background="@color/noticeToolBack">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="证件 卡号(选填)"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/middle_title_sp"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="身份证"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <EditText
+            android:id="@+id/input_ID_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请填写身份证号"
+            android:inputType="number"
+            android:textSize="@dimen/small_title_sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="社保卡"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <EditText
+            android:id="@+id/input_socia_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请填写社保卡号"
+            android:inputType="number"
+            android:textSize="@dimen/small_title_sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/goHopitalLine"/>
+
+    <Button
+        android:id="@+id/user_regist"
+        android:layout_width="@dimen/px280"
+        android:layout_height="@dimen/px40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px25"
+        android:background="@drawable/round_shape_sign"
+        android:gravity="center"
+        android:text="立即注册"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

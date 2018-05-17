@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px14"
+            android:layout_marginTop="@dimen/px6"
+            android:src="@mipmap/shop_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px7"
+            android:layout_marginTop="@dimen/px8"
+            android:text="同仁堂"
+            android:textColor="@color/userInfoContOne"
+            android:textSize="@dimen/px10" />
+
+        <TextView
+            android:id="@+id/delivey_statue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px250"
+            android:layout_marginTop="@dimen/px8"
+            android:text="交易完成"
+            android:textColor="@color/healthDietBack"
+            android:textSize="@dimen/px10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px8"
+        android:background="@color/slowDiseaseLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px8">
+
+        <ImageView
+            android:id="@+id/medicine_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px4"
+            android:src="@mipmap/order" />
+
+        <TextView
+            android:id="@+id/medicine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/px15"
+            android:layout_marginTop="@dimen/px5"
+            android:text="板蓝根颗粒"
+            android:textColor="@color/addMedicaContOne"
+            android:textSize="@dimen/px13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/medicine_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px120"
+                android:text="￥20.00"
+                android:textColor="@color/colletBack"
+                android:textSize="@dimen/px19" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px50"
+                android:layout_marginTop="@dimen/px20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共两件商品合计:40.00"
+                    android:textSize="@dimen/px13" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/slowDiseaseLine" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/px5"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/px52"
+            android:layout_height="@dimen/px22"
+            android:layout_marginLeft="@dimen/px3"
+            android:background="@drawable/round_shape_order_gray"
+            android:padding="@dimen/px1">
+
+            <TextView
+                android:id="@+id/fast_evalution"
+                android:layout_width="@dimen/px50"
+                android:layout_height="@dimen/px20"
+                android:layout_gravity="center"
+                android:background="@drawable/round_shape_order_white"
+                android:gravity="center"
+                android:text="@string/fast_evalution"
+                android:textColor="@color/userPhone"
+                android:textSize="@dimen/px11" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/px52"
+            android:layout_height="@dimen/px22"
+            android:layout_marginLeft="@dimen/px3"
+            android:background="@drawable/round_shape_order_gray"
+            android:padding="@dimen/px1">
+
+            <TextView
+                android:id="@+id/check_logist"
+                android:layout_width="@dimen/px50"
+                android:layout_height="@dimen/px20"
+                android:layout_gravity="center"
+                android:background="@drawable/round_shape_order_white"
+                android:gravity="center"
+                android:text="@string/check_logist"
+                android:textColor="@color/userPhone"
+                android:textSize="@dimen/px11" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/px52"
+            android:layout_height="@dimen/px22"
+            android:layout_marginLeft="@dimen/px3"
+            android:layout_marginRight="@dimen/px5"
+            android:background="@drawable/round_shape_order_gray"
+            android:padding="@dimen/px1">
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="@dimen/px50"
+                android:layout_height="@dimen/px20"
+                android:layout_gravity="center"
+                android:background="@drawable/round_shape_order_white"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/userPhone"
+                android:textSize="@dimen/px11" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px5"
+        android:layout_marginTop="@dimen/px10"
+        android:background="@color/slowDiseaseLine" />
+</LinearLayout>

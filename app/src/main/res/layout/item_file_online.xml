@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px5">
+
+        <LinearLayout
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="反应蛋白检测对急性炎症患者诊断的临床意义...."
+                android:textColor="@color/writerTitle"
+                android:textSize="@dimen/px13" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px12"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/writer_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/writer_logo_one" />
+
+                <TextView
+                    android:id="@+id/writer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px5"
+                    android:text="钟南山院士"
+                    android:textColor="@color/writerName"
+                    android:textSize="@dimen/px8" />
+
+                <TextView
+                    android:id="@+id/up_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px5"
+                    android:text="上传于2017-6-31  14:32"
+                    android:textColor="@color/writerName"
+                    android:textSize="@dimen/px8" />
+
+                <TextView
+                    android:id="@+id/down_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px5"
+                    android:text="200"
+                    android:textColor="@color/downTime"
+                    android:textSize="@dimen/px8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="次下载"
+                    android:textColor="@color/writerName"
+                    android:textSize="@dimen/px8" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px15"
+            android:text="免费下载"
+            android:textColor="@color/colorTooBar"
+            android:textSize="@dimen/px10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px5"
+        android:background="@color/addAddressInfoOne" />
+
+</LinearLayout>

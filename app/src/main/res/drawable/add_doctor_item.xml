@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 求救医生列表条目背景白色带圆角-->
+    <solid android:color="@android:color/white" />
+    <corners android:radius="@dimen/px10" />
+</shape>

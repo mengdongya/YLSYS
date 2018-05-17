@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.NormalUserInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_see_doctor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:orientation="horizontal"
+        android:padding="@dimen/px5">
+
+        <include layout="@layout/base_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_info"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp10"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp30">
+
+            <LinearLayout
+                android:id="@+id/linear_user_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/px10"
+                    android:layout_weight="1"
+                    android:text="头像"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <ImageView
+                    android:id="@+id/user_logo"
+                    android:layout_width="@dimen/px25"
+                    android:layout_height="@dimen/px25"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/user_local"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px15"
+                    android:src="@mipmap/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="用户名"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/tv_nick_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px15"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="用户名"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="ID"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_ID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="ID"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:id="@+id/linear_user_bind_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="绑定手机"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_bind_phone"
+                    android:layout_width="@dimen/px0"
+                    android:layout_height="@dimen/px40"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:hint="手机号"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px15"
+                    android:src="@mipmap/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="姓名"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="姓名"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="性别"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="性别"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="出生日期"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_worn_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="出生日期"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="年龄"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="年龄"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="民族"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="民族"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="职业"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_zhiye"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="职业"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="常住地"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/chang_zhudi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="常住地"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="身高"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_height"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="身高"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="体重"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="体重"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="联系方式"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_contact_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="联系方式(邮箱/微信)"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="身份证"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_ID_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="身份证"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:text="社保卡"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/user_shebao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="社保卡"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1"
+                android:background="@color/goHopitalLine"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

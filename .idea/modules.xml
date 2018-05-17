@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/YLSYS.iml" filepath="$PROJECT_DIR$/YLSYS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logger_library/logger_library.iml" filepath="$PROJECT_DIR$/logger_library/logger_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ocr_ui_library/ocr_ui_library.iml" filepath="$PROJECT_DIR$/ocr_ui_library/ocr_ui_library.iml" />
+    </modules>
+  </component>
+</project>

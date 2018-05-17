@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.AddAddresActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_add_ship_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:orientation="horizontal">
+
+        <include layout="@layout/base_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px100"
+            android:text="@string/add_ship_address"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20" />
+
+        <Button
+            android:id="@+id/ship_address_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px60"
+            android:background="@android:color/transparent"
+            android:text="@string/save_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/myDeviceTile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/px12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px12"
+            android:text="@string/receive_people"
+            android:textColor="@color/addAddressTitle"
+            android:textSize="@dimen/px13" />
+
+        <EditText
+            android:id="@+id/receive_people_name"
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/myDeviceTile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/px12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px12"
+            android:text="@string/receive_phone"
+            android:textColor="@color/addAddressTitle"
+            android:textSize="@dimen/px13" />
+
+        <EditText
+            android:id="@+id/receive_phone"
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/myDeviceTile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/px12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px12"
+            android:text="@string/receive_area"
+            android:textColor="@color/addAddressTitle"
+            android:textSize="@dimen/px13" />
+
+        <EditText
+            android:id="@+id/receive_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:background="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/myDeviceTile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/px12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px12"
+            android:text="@string/receive_street"
+            android:textColor="@color/addAddressTitle"
+            android:textSize="@dimen/px13" />
+
+        <EditText
+            android:id="@+id/receive_street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:background="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/myDeviceTile"
+        android:paddingBottom="@dimen/px5" />
+
+    <EditText
+        android:id="@+id/detail_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@android:color/white"
+        android:gravity="left|top"
+        android:hint="@string/input_detail_address"
+        android:padding="@dimen/px10"
+        android:textColorHint="@color/addAddressInfoTwo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px7"
+        android:background="@color/bg_gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/px13">
+
+        <RadioButton
+            android:id="@+id/ship_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:drawableLeft="@drawable/address_default_selector"
+            android:text="@string/set_default_address"
+            android:textColor="@color/colorTooBar"
+            android:textSize="@dimen/px13" />
+    </FrameLayout>
+</LinearLayout>

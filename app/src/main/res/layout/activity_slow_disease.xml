@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/slow_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/px15"
+            android:paddingRight="@dimen/dp10"
+            android:paddingTop="@dimen/dp10"
+            android:src="@mipmap/back_top_finsh"/>
+
+        <TextView
+            android:id="@+id/slow_disease_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/slow_disease_one"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20"/>
+
+
+        <TextView
+            android:id="@+id/tv_activity_slow_disease_dian"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:visibility="gone"
+            android:background="@drawable/yl_oval_dian"/>
+
+        <ImageView
+            android:id="@+id/add_slow_dise"
+            android:layout_width="@dimen/dmXml50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_view_rounded"
+            android:clickable="true"
+            android:padding="@dimen/dmXml15dp"
+            android:src="@drawable/yl_more_icon"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_disease_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/slow_top_title"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_add_manager"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_disease_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_load_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_no_net"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="内容加载失败，点击重新加载"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新加载"
+                android:layout_marginTop="@dimen/dp20"
+                android:padding="@dimen/dp5"
+                android:background="@drawable/bg_btn_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_lose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_login_lose"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="登录异常，请重新登录"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新登录"
+                android:layout_marginTop="@dimen/dp20"
+                android:padding="@dimen/dp5"
+                android:background="@drawable/bg_btn_gray"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slow_top_title"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/slow_tablayout"
+                android:layout_width="@dimen/px0"
+                android:layout_height="@dimen/px30"
+                android:layout_weight="1"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/light_one"
+                app:tabTextColor="@android:color/black"/>
+
+            <FrameLayout
+                android:id="@+id/delete_dise"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px30"
+                android:background="#F2F2F2"
+                android:padding="@dimen/px3">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/px5"
+                    android:src="@drawable/delete_title"/>
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slow_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slow_tablayout"/>
+    </LinearLayout>
+</RelativeLayout>

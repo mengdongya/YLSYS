@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/px250"
+              android:layout_height="wrap_content"
+              android:background="@drawable/round_shape_white_ask"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:text="填写信息"
+        android:textColor="@color/colorTooBar"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px1"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/px170"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="性别: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_chose_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/chose_sex_men"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/chose_sex_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/px170"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/dai_shu_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:background="@android:color/transparent"
+            android:digits="1234567890"
+            android:hint="请输入代述人的年龄"
+            android:maxLength="3"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10">
+
+        <Button
+            android:id="@+id/cancle_chose"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px30"
+            android:background="@drawable/cancle_round_shape"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/sure_chose"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px30"
+            android:layout_marginLeft="@dimen/px10"
+            android:background="@drawable/sure_round_shape"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

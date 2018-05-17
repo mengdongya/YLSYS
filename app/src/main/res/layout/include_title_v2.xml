@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorTooBar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="back"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/px15"
+            android:paddingRight="@dimen/dp10"
+            android:paddingTop="@dimen/dp10"
+            android:src="@mipmap/back_top_finsh"/>
+
+        <TextView
+            android:id="@+id/tv_include_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_title_sp"/>
+
+        <TextView
+            android:id="@+id/tv_include_title_right"
+            android:layout_width="@dimen/dmXml50dp"
+            android:layout_height="@dimen/dmXml50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/add"
+            android:gravity="center_vertical"
+            android:text="添加"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/big_title_sp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

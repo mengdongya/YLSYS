@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="0px"
+    android:paddingRight="0dp">
+
+    <include layout="@layout/include_shop_market_title" />
+
+    <ImageView
+        style="@style/common_line_horizontal"
+        android:contentDescription="@string/common_line_vertica" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fg_title"
+            class="store.chinaotec.com.medicalcare.shopmarket.logic.type.fragment.TitleFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:scrollbars="none" />
+
+        <ImageView
+            style="@style/common_line_vertica"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_line_vertical"
+            android:background="@color/edit_hint_color"
+            android:contentDescription="@string/app_name" />
+
+        <fragment
+            android:id="@+id/fg_content"
+            class="store.chinaotec.com.medicalcare.shopmarket.logic.type.fragment.ContentFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+</LinearLayout>

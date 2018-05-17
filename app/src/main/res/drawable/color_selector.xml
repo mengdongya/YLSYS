@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--慢性病模块首页 血压  心率 血糖 血脂  按年  按月 按日-->
+    <item android:drawable="@drawable/health_selected" android:state_checked="true" />
+    <item android:drawable="@drawable/health_normal" android:state_checked="false" />
+</selector>

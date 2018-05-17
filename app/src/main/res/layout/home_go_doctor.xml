@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/home_see_doctor"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/px5">
+
+    <ImageView
+        android:id="@+id/see_doctor_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px5"
+        android:src="@mipmap/main_see_doctor"/>
+
+    <TextView
+        android:id="@+id/see_doctor_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px2"
+        android:text="@string/see_doctor_one"
+        android:textColor="@color/toolTitle"
+        android:textSize="@dimen/middle_title_sp"/>
+
+    <TextView
+        android:id="@+id/see_doctor_desp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_doctor_two"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/small_title_sp"/>
+</LinearLayout>

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="itef_app_id">596d68cc</string>
+    <!--<string name="itef_app_id">5a0266e4</string>-->
+    <string name="app_name">爱迪智医</string>
+    <string name="main_home_title">医疗</string>
+    <string name="main_notice_title">通知</string>
+    <string name="main_health_title">健康管理</string>
+    <string name="main_mine_title">我的</string>
+    <string name="main_mine_collection">我的收藏</string>
+    <string name="main_mine_order">我的订单</string>
+    <string name="main_mine_fuction">辅助功能</string>
+    <string name="main_mine_device">我的设备</string>
+    <string name="main_mine_receive_address">收货地址</string>
+    <string name="main_go_setting">设置</string>
+    <string name="see_doctor_one">去看病</string>
+    <string name="see_doctor_two">对应症状 精准诊疗</string>
+    <string name="go_hosipiatl_one">去医院</string>
+    <string name="go_hosipiatl_two">查询医院,轻松导诊</string>
+    <string name="online_doctor_one">医联体医疗</string>
+    <string name="online_doctor_two">专家值班,有问必答</string>
+    <string name="sudden_trease_one">突发伤病处置</string>
+    <string name="sudden_trease_two">专业指导,因病制宜</string>
+    <string name="online_pharm_one">在线药店</string>
+    <string name="online_pharm_two">厂家直销,质优价廉</string>
+    <string name="check_result_one">检查结果解读</string>
+    <string name="check_result_two">专业解读,解疑释惑</string>
+    <string name="key_call_one">一键呼叫</string>
+    <string name="key_call_two">热线联系,及时施救</string>
+    <string name="slow_disease_one">慢性病管理</string>
+    <string name="slow_disease_two">连续建档,准确指导</string>
+    <string name="medical_care_one">医养都会</string>
+    <string name="medical_care_two">医患论坛,知识充电</string>
+    <string name="main_mine_setting">设置</string>
+    <string name="main_health_advisory">健康资讯</string>
+    <string name="main_apoint_regis">预约挂号</string>
+    <string name="main_medic_treat">就医缴费</string>
+    <string name="main_weather_remind">天气提醒</string>
+    <string name="main_child_care">子女关怀</string>
+    <string name="main_logist_infor">物流信息</string>
+    <string name="main_comunity_activity">社区活动</string>
+    <string name="main_medica_remind">事件提醒</string>
+    <string name="main_more">更多</string>
+    <string name="health_file">健康档案</string>
+    <string name="health_height">身高</string>
+    <string name="health_weight">体重</string>
+    <string name="health_blood">血压</string>
+    <string name="health_pulse">脉搏</string>
+    <string name="health_diet">饮食</string>
+    <string name="health_hard">锻炼监控</string>
+    <string name="health_contraception">避孕</string>
+    <string name="left_parenthesis">(</string>
+    <string name="right_parenthesis">)</string>
+    <string name="search_city_promit">请输入城市名</string>
+    <string name="chooose_city_title">选择城市</string>
+    <string name="now_location_city">当前定位</string>
+    <string name="hot_city_title">热门城市</string>
+    <string name="emerge_SOS">急诊SOS</string>
+    <string name="sudden_illnes">突发疾病</string>
+    <string name="severe_trauma">外伤</string>
+    <string name="bite_sting">咬伤</string>
+    <string name="slowdise_entry_person">录入人:</string>
+    <string name="slowdise_entry_time">录入时间:</string>
+    <string name="treated_time">已治疗:</string>
+    <string name="max_blood_pressure">录入最高血压:</string>
+    <string name="min_blood_pressure">录入最低血压:</string>
+    <string name="medical_patient_forum">论坛导航</string>
+    <string name="medical_file_download">资料下载</string>
+    <string name="medical_knowle_charge">医养知识充电</string>
+    <string name="medical_latest_treatment">最新诊疗成果</string>
+    <string name="medical_sign_doctor">签约医生</string>
+    <string name="medical_sign_nurse">签约护士</string>
+    <string name="medical_online_hospital">网上医院</string>
+    <string name="medical_play_video">实用工具</string>
+    <string name="pharmy_all">全部</string>
+    <string name="pharmy_wmedc">西药</string>
+    <string name="pharmy_tramed">中成药</string>
+    <string name="pharmy_country_origin">原产地单味中药</string>
+    <string name="pharmy_health_product">保健品</string>
+    <string name="pharmy_medical_equment">医疗器具</string>
+    <string name="pharmy_exercise_equment">锻炼器材</string>
+    <string name="pharmy_others">其他</string>
+    <string name="online_doctor_city">城市</string>
+    <string name="online_doctor_department">科室</string>
+    <string name="screen_title">筛选</string>
+    <string name="sort_title">排序</string>
+    <string name="clear_contion">清除条件</string>
+    <string name="intellg_treatment">智能诊疗</string>
+    <string name="reservation_title">人预约</string>
+    <string name="user_name">昵称</string>
+    <string name="user_phone">13548956730</string>
+    <string name="distace_title">距离</string>
+    <string name="advisory_title">人咨询</string>
+    <string name="one_key_120">120</string>
+    <string name="one_key_110">110</string>
+    <string name="main_health_add">添加</string>
+    <string name="main_health_me">自己</string>
+    <string name="main_health_others">他人</string>
+    <string name="connect_device">连接设备</string>
+    <string name="connect_device_info">连接设备是指将已有的手环或者医疗检测仪上的数据自动导入APP中</string>
+    <string name="add_manuly">手动添加</string>
+    <string name="up_load_info">上传图像 :</string>
+    <string name="patient_name_info">姓名 :</string>
+    <string name="patient_gender_info">性别 :</string>
+    <string name="patient_gender">性别</string>
+    <string name="patient_age_info">年龄 :</string>
+    <string name="patient_weight_info">体重 :</string>
+    <string name="min_blood_info">最低血压 :</string>
+    <string name="max_blood_info">最高血压 :</string>
+    <string name="patient_height_info">身高 :</string>
+    <string name="patient_pulse_info">脉搏 :</string>
+    <string name="to_live_info">常住地 :</string>
+    <string name="gender_men">男</string>
+    <string name="gender_women">女</string>
+    <string name="please_choose">请选择</string>
+    <string name="no_medical_remind_info">目前你没有需要体检的项目</string>
+    <string name="medical_remind">体检提醒</string>
+    <string name="recomend_hospital">为你推荐的医院</string>
+    <string name="medical_remind_info">正常情况每个人每满一年必须安排一次全身检查</string>
+    <string name="examina_time">时间 :</string>
+    <string name="examina_date">体检日期 :</string>
+    <string name="examina_remark">备注 :</string>
+    <string name="submit_info">提交</string>
+    <string name="hospital_real">医院实景</string>
+    <string name="hospital_introduct">医院简介</string>
+    <string name="bus_route">导航</string>
+    <string name="regist_doctor">挂号</string>
+    <string name="guide_doctor">导诊</string>
+    <string name="regist_hospital_introduct">该项功能仅仅只对本APP合作的医院开放,切必须提前三天预约.</string>
+    <string name="appoint_person">预约人</string>
+    <string name="appoint_time">预约时间</string>
+    <string name="sendar">性别</string>
+    <string name="ID_number">身份证号</string>
+    <string name="depart_ment">科室</string>
+    <string name="regist_cost">费用</string>
+    <string name="hospital_name">医院名称</string>
+    <string name="hospital_address">医院地址</string>
+    <string name="hospital_phone">医院电话</string>
+    <string name="micro_letter_pay">微信支付</string>
+    <string name="ali_pay">支付宝支付</string>
+    <string name="user_info">个人信息</string>
+    <string name="sure_come_back">确认并返回</string>
+    <string name="change_username_promit">七个汉字或者14个字母以内</string>
+    <string name="user_logo">头像</string>
+    <string name="user_nick_name">昵称</string>
+    <string name="user_ID">ID</string>
+    <string name="mine_user_phone">手机号</string>
+    <string name="change_user_name">修改昵称</string>
+    <string name="hospital">医院</string>
+    <string name="doctor">医生</string>
+    <string name="mine_collection">我的收藏</string>
+    <string name="collection">收藏</string>
+    <string name="conect_phone">电话语音</string>
+    <string name="conect_phone_price">￥6元/分钟</string>
+    <string name="conect_SMS">图文咨询</string>
+    <string name="conect_SMS_price">￥80元/一次</string>
+    <string name="conect_video">视频</string>
+    <string name="conect_video_price">￥20元/分钟</string>
+    <string name="doctor_profile">医生简介</string>
+    <string name="doctor_profile_info">刘晓红，医学博士、理学博士，内科主任医师（从事老年医学、老年消化内科），博士导师，老年医学科主任。1982年毕业于北京医科大学，1990年北京医科大学第三医院消化科获医学博士学位，1995年日本九州大学医学部获医学理学博士学位（Ph.D）。2011年赴美国约翰霍普金斯老年医学科学习3个月。</string>
+    <string name="sign_doctor">我要签约</string>
+    <string name="sign_doctor_price">￥500元/周</string>
+    <string name="patient_evalution">患者评价</string>
+    <string name="statues">状态</string>
+    <string name="fast_evalution">立即评价</string>
+    <string name="check_logist">查看物流</string>
+    <string name="delete">删除</string>
+    <string name="create_date">创建日期</string>
+    <string name="change_device">更换设备</string>
+    <string name="add_device">添加设备</string>
+    <string name="click_buy">点击购买</string>
+    <string name="device_recmend">推荐使用咕咚手环,健康数据更准确.</string>
+    <string name="ship_address_manage">管理我的地址</string>
+    <string name="edit_title">编辑</string>
+    <string name="default_address">默认地址</string>
+    <string name="set_default_address">设为默认</string>
+    <string name="add_ship_address">增添新地址</string>
+    <string name="save_title">保存</string>
+    <string name="receive_people">收货人</string>
+    <string name="receive_phone">联系电话</string>
+    <string name="receive_area">所在地区</string>
+    <string name="receive_street">所在街道</string>
+    <string name="input_detail_address">请填写详细地址</string>
+    <string name="message_notice">消息通知</string>
+    <string name="remove_cash">清除缓存</string>
+    <string name="secret">隐私</string>
+    <string name="help_feedback">帮助与反馈</string>
+    <string name="statement">关于我们</string>
+    <string name="now_version">当前版本 :</string>
+    <string name="sign_out">退出登陆</string>
+    <string name="news_push">新闻推送</string>
+    <string name="doctor_reply_reminder">医生回复提醒</string>
+    <string name="health_plan_push">健康计划推送</string>
+    <string name="product_news_push">产品消息推送</string>
+    <string name="remove_cash_title">确认清除所有缓存?</string>
+    <string name="remove_cash_ok">确认清除</string>
+    <string name="remove_cash_canle">取消</string>
+    <string name="disease_introduc">先天性心脏病指由于遗传或母亲怀孕时因感染而引起产后婴儿的畸形。这种畸形表现在心脏上的左右间隔闭合不全。或动脉导管未闭。法络氏四联症。 而后天性的心脏病分为原发和继发两种。原发性心脏病尚不知原因。继发心脏病主要是又高血压引起或可由肾脏衰竭引起。预防的方法主要是一发现有血压高的症状应定期到医院测量并注意饮食和睡眠。</string>
+    <string name="show_introduct">展开</string>
+    <string name="hide_introduct">隐藏</string>
+    <string name="medical_precript">药方</string>
+    <string name="medical_advice_program">医疗建议方案</string>
+    <string name="resuse_plan">救助方案</string>
+    <string name="plan">经确诊后正规有效的治疗方案是必须的,在日常生活中学会自我管理，建立良好的健康的生活方式，对心脏病患者而言，至关重要。 </string>
+    <string name="all_add">新增</string>
+    <string name="one_call_help">一键求救</string>
+    <string name="medical_advice">以上方案均因人而异,因地而异,因时而异,进攻参考,具体情况请请遵循医嘱!</string>
+    <string name="from_contacts">从通讯录选择</string>
+    <string name="contacts_name">姓名</string>
+    <string name="contacts_phone">电话</string>
+    <string name="progress_monitor">进展监控</string>
+    <string name="treat_rehabit">治疗康复</string>
+    <string name="refer_advice">复诊检察建议</string>
+    <string name="prompt_service">提示服务</string>
+    <string name="get_sick_time">起病时间 :</string>
+
+    <string name="treat_drug_one">治疗药品1 :</string>
+    <string name="treat_drug_two">治疗药品2 :</string>
+    <string name="treat_drug_three">治疗药品3 :</string>
+    <string name="treat_drug_four">治疗药品4 :</string>
+
+    <string name="blood_press">血压</string>
+    <string name="blood_suger">血糖</string>
+    <string name="blood_slipid">体重</string>
+    <string name="heart_rate">心率</string>
+
+    <string name="blood_suger_after">血糖( 饭后 ) :</string>
+    <string name="blood_suger_before">血糖( 饭前 ) :</string>
+    <string name="blood_slipid_title">血脂 :</string>
+    <string name="heart_rate_title">心率 :</string>
+    <string name="systo_blood_press">收缩压 :</string>
+    <string name="diasto_blood_press">舒张压 :</string>
+    <!--科大讯飞对接-->
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_key_translate">translate</string>
+    <string name="text_begin">请开始说话…</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="pref_title_translate">翻译</string>
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <!-- 标点符号 -->
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>en_us</item>
+    </string-array>
+
+    <string-array name="voicer_cloud_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>凯瑟琳—女青、英</item>
+        <item>亨利—男青、英</item>
+        <item>玛丽—女青、英</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾普通话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+    <string name="tts_toast_format" formatted="false">缓冲进度为%d%%，播放进度为%d%%</string>
+    <string name="health_advist_info">科学家告诉你怎么吃更健康,科学家告诉你怎么吃更科学,科学家告诉你怎么吃更营养</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--商超-->
+    <string name="loading">加载中&#8230;</string>
+    <string name="net_error">网络连接失败！</string>
+    <string name="no_net_error">网络在开差，检查后再试吧</string>
+    <string name="common_line_horizontal">修饰线-横向</string>
+    <string name="common_line_vertica">修饰线-纵向</string>
+    <!-- main_tab -->
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_type">分类</string>
+    <string name="main_tab_shop">店铺</string>
+    <string name="main_tab_cart">购物车</string>
+    <string name="main_tab_user">个人中心</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="title_activity_into_roll_out_detail">IntoRollOutDetailActivity</string>
+    <string name="home_label_1">精品推荐</string>
+    <string name="user_btn_orders">我的订单</string>
+    <string name="user_btn_all_orders">查看全部订单</string>
+    <string name="user_btn_address">地址管理</string>
+    <string name="user_btn_open_store_shop">申请开店</string>
+    <string name="user_btn_favorites">我的收藏</string>
+    <string name="user_btn_my_brows_history">我的足迹</string>
+    <string name="user_btn_customer_complaint">意见反馈</string>
+
+
+    <string name="sku_title_info">商品介绍</string>
+    <string name="sku_title_graphic_info1"><u>图文</u></string>
+    <string name="sku_title_graphic_info">图文</string>
+    <string name="sku_tab_info">商品</string>
+    <string name="sku_tab_info1"><u>商品</u></string>
+    <string name="may_like">猜你可能喜欢</string>
+    <string name="home_label_2">特惠街</string>
+
+    <!-- 购物车 cart -->
+    <string name="cart_title">购物车</string>
+    <string name="cart_btn_go_shopping">去逛逛 </string>
+    <string name="cart_btn_go_logining">去登录 </string>
+    <string name="cart_btn_go_login">登录 </string>
+    <string name="cart_btn_go_dismiss">放弃</string>
+    <string name="cart_label_0">您的购物车是空的!</string>
+    <string name="cart_label_1">购物车是空的,是否登录?</string>
+    <string name="cart_label_2">赶快去购物吧!</string>
+    <string name="cart_label_3">您可以在登录后同步购物车中的商品</string>
+    <string name="store_free_freight_amount">(自营满%s元免运费)</string>
+
+    <!-- 地址管理  address -->
+    <string name="address_title_list">地址管理</string>
+    <string name="address_title_new">新建地址</string>
+    <string name="address_title_change">编辑地址</string>
+    <string name="address_title_province">选择省份</string>
+    <string name="address_title_city">选择城市</string>
+    <string name="address_title_district">选择地区</string>
+    <string name="address_btn_add">新建地址</string>
+    <string name="address_lable_name">收货人姓名:</string>
+    <string name="address_lable_phone">手机号码:</string>
+    <string name="address_lable_city">所在地区:</string>
+    <string name="address_lable_address">详细地址:</string>
+    <string name="address_lable_default">设置默认地址</string>
+    <string name="address_no">您还没有收货地址,快来添加吧!</string>
+    <string name="address_btn_no_add">添加新地址</string>
+    <string name="address_save">保存</string>
+    <string name="register_hint_username">请输入手机号</string>
+    <string name="register_tip_username_error">请输入正确的手机号</string>
+    <string name="clear">取消</string>
+    <string name="yes">确定</string>
+    <!-- 评论 -->
+    <string name="btn_submit">提交</string>
+    <string name="evaluate_title">发表评论</string>
+    <string name="evaluate_title_txt1">发表内容评价，分享心得！</string>
+    <string name="evaluate_title_color">规格 ∶ %s</string>
+    <string name="evaluate_title_color1">规格 ∶</string>
+    <string name="evaluate_card_type">卡类</string>
+    <string name="evaluate_title_size">类型 ∶ %s</string>
+    <string name="evaluate_title_size1">类型 ∶</string>
+    <string name="evaluate_title_number">数量 ∶ %s</string>
+    <string name="evaluate_title_price">￥ ∶ %s</string>
+    <string name="evaluate_title_good">好评</string>
+    <string name="evaluate_title_center">中评</string>
+    <string name="evaluate_title_bad">差评</string>
+
+    <!-- 我的收藏 my favorite -->
+    <string name="my_favorite_title">我的收藏</string>
+    <string name="my_favorite_no">您还没收藏任何商品哦!</string>
+    <string name="my_favorite_no_goto">去逛逛吧</string>
+    <string name="user_sku_browse_history">抱歉，您还没有浏览历史记录</string>
+    <string name="hint_freeback">0/100 </string>
+    <string name="txt_freeback">%s/100 </string>
+    <string name="search_edittext_hint_phone_or_email">请输入您的手机号</string>
+    <string name="search_edittext_hint_freeback">欢迎留下您宝贵的意见 </string>
+
+    <!-- 评论列表 -->
+    <string name="user_comment_all">全部</string>
+    <string name="user_comment_no">暂时还没收到评论哦 ！</string>
+    <string name="btn_submit1">发表评论</string>
+    <string name="btn_feedback_tit">好评，非常满意！</string>
+    <string name="btn_goto_evaluate">去评价</string>
+
+    <!-- 我的订单 order -->
+    <string name="order_title">我的订单</string>
+    <string name="order_sku_title">商品</string>
+    <string name="order_tab_all">全部</string>
+    <string name="order_tab_pay">待付款</string>
+    <string name="order_tab_send">待发货</string>
+    <string name="order_tab_receive">待收货</string>
+    <string name="order_tab_evaluate">待评价</string>
+    <string name="order_tv_order_num">订单编号∶%s</string>
+    <string name="order_tv_order_menu">(&#160;%s&#160;)</string>
+    <string name="order_tv_order_price">金额∶&lt;font color="#FED27E"&gt; %s &lt;/font&gt;</string>
+    <string name="order_tv_order_date">交易日期∶%s</string>
+    <string name="order_tv_order_status">交易状态∶&lt;font color="#FED27E"&gt;%s&lt;/font&gt;</string>
+    <string name="order_tv_order_info">订单详情</string>
+    <string name="order_tv_order_evaluate">立即评价</string>
+    <string name="order_tv_order_evaluate1">  去评价  </string>
+    <string name="order_tv_order_evaluate_del">  删除订单 </string>
+    <string name="order_tv_order_receiving">立即收货</string>
+    <string name="order_tv_order_pay">立即支付</string>
+    <string name="order_tv_order_max">共%s件</string>
+    <string name="order_tv_evaluate">补充评价（选填）：</string>
+    <string name="order_tv_order_info_status">订单状态∶&lt;font color="#FED27E"&gt;%s&lt;/font&gt;</string>
+    <string name="order_tv_order_info_code">订单号∶&lt;font color="#FED27E"&gt;%s&lt;/font&gt;</string>
+    <string name="order_tv_order_info_date">订单日期∶&lt;font color="#FED27E"&gt;%s&lt;/font&gt;</string>
+    <string name="order_tv_order_info_sku_total_price">商品总金额∶&lt;font color="#FED27E"&gt;￥%s&lt;/font&gt;</string>
+    <string name="order_tv_order_info_actual_transfer_fee">运费∶&lt;font color="#FED27E"&gt;￥%s&lt;/font&gt;</string>
+    <string name="order_tv_order_info_order_price">订单金额∶&lt;font color="#FED27E"&gt;￥%s&lt;/font&gt;</string>
+    <string name="order_tv_express_txt">物流状态</string>
+    <string name="order_tv_express_number">快递单号： %s</string>
+    <string name="order_tv_express_name">物流公司： %s</string>
+
+    <!-- 订单详情   orderInfo -->
+    <string name="orderinfo_title">订单详情</string>
+    <string name="orderinfo_order_time">下单时间：%s</string>
+    <string name="orderinfo_pay_time">成功支付时间：%s</string>
+    <string name="pay_title">支付完成</string>
+    <string name="orderinfo_send_time">卖家发货时间：%s</string>
+    <string name="orderinfo_fail_reason">审核不通过原因：%s</string>
+    <string name="orderinfo_sys_ok_time">系统自动确认收货时间：%s</string>
+    <string name="orderinfo_order_status">订单状态:%s</string>
+    <string name="orderinfo_trans_status">卖家已发货</string>
+    <string name="orderinfo_price">订单金额(含运费):%s</string>
+    <string name="orderinfo_total_price">合计: ￥∶%s</string>
+    <string name="orderinfo_confirm_receipt">确认收货</string>
+    <string name="orderinfo_pay">去付款</string>
+    <string name="orderinfo_remind_send">提醒发货</string>
+    <string name="orderinfo_tab_pay">等待付款</string>
+    <string name="orderinfo_tab_send">等待发货</string>
+    <string name="orderinfo_tab_receive">等待确认收货</string>
+    <string name="orderinfo_tab_evaluate">等待评价</string>
+
+    <string name="creat_order_check_send_data_1">周一到周日(任意时间)</string>
+    <string name="creat_order_check_send_data_2">周一到周五(工作日)</string>
+    <string name="creat_order_check_send_data_3">周六周日(休息日)</string>
+    <string name="store_goto_order_ed_hint_memo">选填,可填写您的具体要求</string>
+
+    <string name="shop_market_no_stores">店铺暂未开放</string>
+    <string name="shop_market_store_home">店铺首页</string>
+    <string name="shop_market_store_type">店铺分类</string>
+    <string name="shop_market_store_introduce">店铺介绍</string>
+    <string name="shop_market_apply_open_shop_et_name">请输入您的姓名</string>
+    <string name="shop_market_apply_open_shop_et_phone">请输入您的电话</string>
+    <string name="shop_market_apply_open_shop_et_area">请选择您所在的省市区</string>
+    <string name="shop_market_apply_open_shop_et_address">请输入您的详细地址</string>
+    <string name="shop_market_apply_open_shop_id_card">请上传身份证照片</string>
+    <string name="shop_market_apply_open_shop_business_license">请上传营业执照</string>
+
+    <string name="search_edittext_hint">搜你想要的产品</string>
+    <string name="sku_list_title_search">搜索结果</string>
+    <string name="search_on_sku_title">咦!暂时没有搜到您想要的,试试其他关键词吧</string>
+    <string name="app_id">asdadalsdhqasd</string>
+    <string name="shanghai">甘肃玉门</string>
+    <string name="no_result">抱歉，未能找到结果</string>
+    <string name="no_map_app">没发现地图软件，无法导航</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">最近更新：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+</resources>

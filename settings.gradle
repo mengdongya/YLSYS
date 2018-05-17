@@ -1,0 +1,1 @@
+include ':app', ':logger_library', ':ocr_ui_library'

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/slow_dise_content_back"
+    android:orientation="horizontal">
+    <!--修改用户疾病种类页面分类疾病展示条目-->
+    <TextView
+        android:id="@+id/delete_dise_name"
+        android:layout_width="@dimen/px0"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="慢性心里衰竭"
+        android:textColor="@color/slowDiseCont"
+        android:textSize="@dimen/px12" />
+</LinearLayout>

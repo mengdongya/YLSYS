@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_backgroud_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!-- 引用标题栏布局 -->
+
+    <include layout="@layout/include_shop_market_title" />
+
+    <ImageView
+        style="@style/common_line_horizontal"
+        android:contentDescription="@string/common_line_vertica" />
+
+    <!--<LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">-->
+
+    <!--<org.aorun.ym.module.shopmarket.common.referencecontrol.refresh.RefreshLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >-->
+
+    <ScrollView
+        android:id="@+id/scv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/main_backgroud_color"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/viewpager_main"
+                    android:name="store.chinaotec.com.medicalcare.shopmarket.logic.home.bannerweight.CycleViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_banner_height" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/main_lyt_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/item_width1"
+                            android:layout_height="@dimen/item_width1"
+                            android:src="@mipmap/icon_home_type" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="分类"
+                            android:textColor="@color/mineTool"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/main_lyt_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/item_width1"
+                            android:layout_height="@dimen/item_width1"
+                            android:src="@mipmap/icon_home_order" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="订单"
+                            android:textColor="@color/mineTool"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/main_lyt_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/item_width1"
+                            android:layout_height="@dimen/item_width1"
+                            android:src="@mipmap/icon_home_collect" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="收藏"
+                            android:textColor="@color/mineTool"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="8dp"
+                    android:visibility="gone">
+
+                    <store.chinaotec.com.medicalcare.shopmarket.common.view.MyScrollGridView
+                        android:id="@+id/gv_home_function"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:horizontalSpacing="0.0px"
+                        android:numColumns="3"
+                        android:soundEffectsEnabled="true"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0.0px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_alading_shop_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_sdmbao" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:text=":"
+                            android:textColor="@color/text_color_sku_name" />
+
+                        <TextSwitcher
+                            android:id="@+id/wel_Txt_Switcher"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:inAnimation="@anim/scroll_in_anim"
+                            android:outAnimation="@anim/scroll_out_anim" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_special_height"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/main_backgroud_color"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_special_0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2"
+                            android:scaleType="fitXY" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_special_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:scaleType="fitXY" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/iv_special_2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:scaleType="fitXY" />
+
+                                <ImageView
+                                    android:id="@+id/iv_special_3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_weight="1"
+                                    android:scaleType="fitXY" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--<fragment
+                        android:id="@+id/viewpager_lable"
+                        android:name="org.aorun.ym.module.shopmarket.logic.home.bannerweight.CycleViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_lable_height"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        />-->
+
+                    <GridView
+                        android:id="@+id/gv_two_lable"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/main_two_zhuanqu_height"
+                        android:layout_margin="2.5dp"
+                        android:background="@color/main_backgroud_color"
+                        android:horizontalSpacing="0.0px"
+                        android:numColumns="2"
+                        android:soundEffectsEnabled="true"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0.0px"
+                        android:visibility="gone" />
+
+                    <store.chinaotec.com.medicalcare.shopmarket.common.view.MyScrollGridView
+                        android:id="@+id/gv_six_lable"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:layout_margin="2.5dp"
+                        android:background="@color/main_backgroud_color"
+                        android:horizontalSpacing="0.0px"
+                        android:numColumns="4"
+                        android:soundEffectsEnabled="true"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0.0px" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_hot_recommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:background="@drawable/bg_main_sub_title"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:src="@drawable/home_hot_recommend" />
+
+                        <TextView
+                            android:id="@+id/tv_discount"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/home_label_1"
+                            android:textColor="@color/text_color_orange"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <store.chinaotec.com.medicalcare.shopmarket.common.view.MyScrollGridView
+                        android:id="@+id/gv_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="2"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp" />
+                </LinearLayout>
+
+                <store.chinaotec.com.medicalcare.shopmarket.common.view.MyScrollListView
+                    android:id="@+id/lv_store_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:horizontalSpacing="5dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </ScrollView>
+    <!-- </org.aorun.ym.module.shopmarket.common.referencecontrol.refresh.RefreshLayout>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/ll_no_net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_no_net" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="网络请求失败"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="请检查您的网络"
+            android:textColor="@color/text_color_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

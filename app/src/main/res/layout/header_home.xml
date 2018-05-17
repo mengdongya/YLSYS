@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:godoct="http://schemas.android.com/apk/res-auto"
+    xmlns:home="http://schemas.android.com/apk/res-auto"
+    xmlns:top="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px370"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px1"
+            android:background="@color/mainToolLine" />
+
+        <LinearLayout
+            android:id="@+id/linear_home_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px0"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <store.chinaotec.com.medicalcare.view.GoSeeDoctView
+                android:id="@+id/home_see_doctor"
+                android:layout_width="@dimen/px0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                godoct:SeeDoctDescrip="@string/see_doctor_two"
+                godoct:SeeDoctLogo="@mipmap/main_see_doctor"
+                godoct:SeeDoctTitle="@string/see_doctor_one"/>
+
+            <View
+                android:layout_width="@dimen/px1"
+                android:layout_height="match_parent"
+                android:background="@color/mainToolLine"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/px0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <store.chinaotec.com.medicalcare.view.HomeTopView
+                    android:id="@+id/home_go_hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px0"
+                    android:layout_weight="1"
+                    top:topDesion="@string/go_hosipiatl_two"
+                    top:topLogo="@mipmap/main_go_hosipital"
+                    top:topTitle="@string/go_hosipiatl_one"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px1"
+                    android:background="@color/mainToolLine"/>
+
+                <store.chinaotec.com.medicalcare.view.HomeTopView
+                    android:id="@+id/home_online_physic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px0"
+                    android:layout_weight="1"
+                    top:topDesion="@string/online_doctor_two"
+                    top:topLogo="@mipmap/main_online_physic"
+                    top:topTitle="@string/online_doctor_one"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/home_line"/>
+
+        <LinearLayout
+            android:id="@+id/linear_home_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px0"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/px0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <store.chinaotec.com.medicalcare.view.HomeItemView
+                    android:id="@+id/home_sudden_treat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px0"
+                    android:layout_weight="1"
+                    home:itemDesion="@string/sudden_trease_two"
+                    home:itemLogo="@mipmap/main_sudden_treat"
+                    home:itemTitle="@string/sudden_trease_one"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px1"
+                    android:background="@color/mainToolLine"/>
+
+                <store.chinaotec.com.medicalcare.view.HomeItemView
+                    android:id="@+id/home_check_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px0"
+                    android:layout_weight="1"
+                    home:itemDesion="@string/check_result_two"
+                    home:itemLogo="@mipmap/main_check_result"
+                    home:itemTitle="@string/check_result_one"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px1"
+                    android:background="@color/mainToolLine"/>
+
+                <store.chinaotec.com.medicalcare.view.HomeItemView
+                    android:id="@+id/home_slow_disease"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px0"
+                    android:layout_weight="1"
+                    home:itemDesion="@string/slow_disease_two"
+                    home:itemLogo="@mipmap/main_slow_disease"
+                    home:itemTitle="@string/slow_disease_one"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/px1"
+                android:layout_height="match_parent"
+                android:background="@color/mainToolLine"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/px0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <store.chinaotec.com.medicalcare.view.HomeItemView
+                    android:id="@+id/home_online_pharm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px0"
+                    android:layout_weight="1"
+                    home:itemDesion="@string/online_pharm_two"
+                    home:itemLogo="@mipmap/main_online_pharm"
+                    home:itemTitle="@string/online_pharm_one"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px1"
+                    android:background="@color/mainToolLine"/>
+
+                <store.chinaotec.com.medicalcare.view.HomeItemView
+                    android:id="@+id/home_yousheng_youyu"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px0"
+                    android:layout_weight="1"
+                    home:itemDesion="女性助手,Baby保姆"
+                    home:itemLogo="@mipmap/pre_post_care"
+                    home:itemTitle="优生优育"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px1"
+                    android:background="@color/mainToolLine"/>
+
+                <store.chinaotec.com.medicalcare.view.HomeItemView
+                    android:id="@+id/home_medical_care"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px0"
+                    android:layout_weight="1"
+                    home:itemDesion="@string/medical_care_two"
+                    home:itemLogo="@mipmap/main_medical_care"
+                    home:itemTitle="@string/medical_care_one"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/home_line"/>
+
+    <include layout="@layout/health_info_title"/>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/px3"
+            android:layout_height="@dimen/px25"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px15"
+            android:layout_marginTop="@dimen/px6"
+            android:background="@drawable/line_shape"/>
+
+        <TextView
+            android:id="@+id/dise_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px5"
+            android:layout_marginTop="@dimen/px10"
+            android:text="标题"
+            android:textColor="@color/colorTooBar"
+            android:textSize="@dimen/px14"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px6"
+        android:background="@color/addAddressInfoTwo"/>
+
+    <TextView
+        android:id="@+id/dise_detail_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp15"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/px14"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px5"
+        android:background="@color/mainToolLine"/>
+</LinearLayout>

@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "store.chinaotec.com.medicalcare"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 20
+        versionName "1.1.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "21c8333404381788917db96a", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+ext {
+    supportLibVersion = "25.1.0"
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/swipemenulistview.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/alipaySdk-20160812.jar')
+    compile files('libs/AMap_3DMap_V4.0.1_20160923.jar')
+    compile files('libs/AMap_Location_V2.4.1_20160414.jar')
+    compile files('libs/AMap_Search_V3.4.0_20160811.jar')
+    compile files('libs/hellocharts-library-1.5.8.jar')
+    compile project(':logger_library')
+    compile project(':ocr_ui_library')
+    compile files('libs/Msc.jar')
+    compile files('libs/ocr-sdk.jar')
+    compile files('libs/Sunflower.jar')
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.zhy:okhttputils:2.6.1'
+    compile 'com.yanzhenjie:permission:1.0.1'
+    compile 'com.alibaba:fastjson:1.2.12'
+    compile 'com.github.iwgang:countdownview:2.1.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.lzy.net:okgo:2.1.4'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'dom4j:dom4j:20040902.021138'
+    compile 'com.lzy.widget:imagepicker:0.6.1'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.4.0'
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    compile 'com.github.barteksc:android-pdf-viewer:2.8.1'
+    compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
+    compile 'com.acker:simplezxing:1.5'
+//    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'org.simple:androideventbus:1.0.5.1'
+    compile 'cn.jiguang.sdk:jpush:3.1.1'
+    // 此处以JPush 3.1.1 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.9'
+    // 此处以JCore 1.1.9 版本为例。
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+
+}

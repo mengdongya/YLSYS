@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px66"
+    android:layout_marginTop="@dimen/px10"
+    android:background="@drawable/add_doctor_item">
+
+    <RelativeLayout
+        android:id="@+id/dise_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/help_doctor_left"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/delete_dise_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_toRightOf="@+id/dise_number"
+        android:text="张医生"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/delete_switch"
+        android:layout_width="@dimen/px25"
+        android:layout_height="@dimen/px25"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/px15"
+        android:src="@drawable/delete_title" />
+</RelativeLayout>

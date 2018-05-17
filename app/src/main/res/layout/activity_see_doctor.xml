@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/bg_see_doctor"
+                tools:context="store.chinaotec.com.medicalcare.activity.SeeDoctorActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_see_doctor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:padding="@dimen/px10">
+
+        <include layout="@layout/base_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/see_doctor_one"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/big_title_sp"/>
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@mipmap/icon_san"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tishi_mess"
+        android:layout_width="@dimen/px200"
+        android:layout_height="@dimen/px200"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/image"
+        android:layout_marginLeft="@dimen/px15"
+        android:layout_marginBottom="@dimen/dp20"
+        android:src="@mipmap/bg_see_doctor_dialog"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_above="@+id/linear_down"
+        android:layout_toEndOf="@+id/tishi_mess"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/linear_down"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px63"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/connect_butom_back"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ask_linear"
+            android:layout_width="@dimen/px0"
+            android:layout_height="@dimen/px43"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_marginTop="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@drawable/round_shape_order_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="问诊人:"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/ask_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自己"
+                android:textColor="@color/colorTooBar"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px5"
+                android:src="@mipmap/ask_left"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/see_doctor_next"
+            android:layout_width="@dimen/px100"
+            android:layout_height="@dimen/px43"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_marginRight="@dimen/px10"
+            android:layout_marginTop="@dimen/px10"
+            android:layout_toRightOf="@+id/ask_linear"
+            android:background="@drawable/round_shape_ask"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</RelativeLayout>

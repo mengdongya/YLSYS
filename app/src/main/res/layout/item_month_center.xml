@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45">
+
+        <TextView
+            android:id="@+id/month_center_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@mipmap/month_center_back"
+            android:gravity="center"
+            android:text="1."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/big_title_sp"/>
+
+        <TextView
+            android:id="@+id/month_center_addres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/month_center_no"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="16"
+            android:text="上海市宝山区人民路300号爱知宝爱知宝爱知宝爱知宝爱知宝地.."
+            android:textColor="@color/toolTitle"
+            android:textSize="@dimen/middle_title_sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@mipmap/arrow_right"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/mainToolLine"/>
+</LinearLayout>

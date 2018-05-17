@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/meidicalCareContTwo">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_hor_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_horizontall_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp5"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_horizon_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_horizontall_view1"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/tv_horizontall_view3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_horizon_view1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingTop="@dimen/dp5"
+            android:text="12/12"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+</RelativeLayout>

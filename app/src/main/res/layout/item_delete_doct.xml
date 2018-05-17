@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/delete_doctor">
+
+    <Button
+        android:id="@+id/doctor_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/delete"
+        android:padding="@dimen/dp10"
+        android:text="删除"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp" />
+</RelativeLayout>

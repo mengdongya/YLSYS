@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.BusineExperActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:padding="@dimen/px5">
+
+        <include layout="@layout/base_back" />
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="从业经历"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px20" />
+
+        <TextView
+            android:id="@+id/sure_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px15" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/chooseCityBackItem">
+
+        <EditText
+            android:id="@+id/busines_work"
+            android:layout_width="@dimen/px300"
+            android:layout_height="@dimen/px200"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/px50"
+            android:background="@android:color/white"
+            android:gravity="top|left" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/add_doctor_item"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_link_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:background="@drawable/link_icon"/>
+
+        <TextView
+            android:id="@+id/tv_item_link_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_toRightOf="@+id/iv_item_link_icon"
+            android:text="姓名:AAAA"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"/>
+
+        <TextView
+            android:id="@+id/tv_item_link_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_link_name"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_toRightOf="@+id/iv_item_link_icon"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14"/>
+
+        <TextView
+            android:id="@+id/tv_item_link_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_link_phone"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_toRightOf="@+id/iv_item_link_icon"
+            android:text="2018-02-12"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/mainToolLine"/>
+</LinearLayout>

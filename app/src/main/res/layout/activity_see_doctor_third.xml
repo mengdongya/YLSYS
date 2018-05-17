@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.SeeDoctThirdActivity">
+
+    <EditText
+        android:id="@+id/edittext_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/voice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="语音转换为文字" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昔人已乘黄鹤去，此地空余黄鹤楼.黄鹤一去不复返,白云千载空悠悠.晴川历历汉阳树,芳草萋萋鹦鹉洲.日暮乡关何处是,烟波江上使人愁." />
+
+    <Button
+        android:id="@+id/text_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字转换为语音" />
+
+    <Button
+        android:id="@+id/question_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提问题" />
+</LinearLayout>

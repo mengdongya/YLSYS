@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_backgroud_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <View
+            style="@style/common_line_horizontal"
+            android:contentDescription="@string/common_line_vertica" />
+
+        <RadioGroup
+            android:id="@+id/shop_main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/background_tabbar_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button0"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:text="@string/shop_market_store_home"
+                android:textColor="@color/tab_rbtn_text_color" />
+
+            <View
+                style="@style/common_line_vertical"
+                android:contentDescription="@string/common_line_vertica" />
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                style="@style/main_tab_bottom"
+                android:text="@string/shop_market_store_type"
+                android:textColor="@color/tab_rbtn_text_color" />
+
+            <View
+                style="@style/common_line_vertical"
+                android:contentDescription="@string/common_line_vertica" />
+
+            <RadioButton
+                android:id="@+id/radio_button2"
+                style="@style/main_tab_bottom"
+                android:text="@string/shop_market_store_introduce"
+                android:textColor="@color/tab_rbtn_text_color" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</TabHost>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--删除用户的疾病种类弹窗 确认  取消字体选择器-->
+    <item android:state_checked="true" android:color = "#fc2525"/>
+    <item android:state_checked="false" android:color = "#504f4f"/>
+</selector>

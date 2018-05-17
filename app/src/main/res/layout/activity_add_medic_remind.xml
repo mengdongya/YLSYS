@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="store.chinaotec.com.medicalcare.activity.AddRemindsActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_add_medica_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10">
+
+        <include layout="@layout/base_back" />
+
+        <TextView
+            android:id="@+id/main_health_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px100"
+            android:text="@string/medical_remind"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_examination_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px59"
+        android:layout_marginTop="@dimen/px21"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/examina_date"
+            android:textColor="@color/addMedicaContOne"
+            android:textSize="@dimen/px12" />
+
+        <TextView
+            android:id="@+id/examination_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:background="@color/medicRemindLine"
+            android:hint="@string/please_choose"
+            android:textColor="@color/addMedicaContTwo"
+            android:textSize="@dimen/px12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_examination_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px87"
+        android:layout_marginTop="@dimen/px10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/examina_time"
+            android:textColor="@color/addMedicaContOne"
+            android:textSize="@dimen/px12" />
+
+        <TextView
+            android:id="@+id/examination_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:background="@color/medicRemindLine"
+            android:hint="@string/please_choose"
+            android:textColor="@color/addMedicaContTwo"
+            android:textSize="@dimen/px12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_examination_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px87"
+        android:layout_marginTop="@dimen/px10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/examina_remark"
+            android:textColor="@color/addMedicaContOne"
+            android:textSize="@dimen/px12" />
+
+        <EditText
+            android:id="@+id/examination_remark"
+            android:layout_width="@dimen/px160"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px10"
+            android:background="@color/medicRemindLine"
+            android:padding="@dimen/px2"
+            android:textColor="@color/addMedicaContTwo"
+            android:textSize="@dimen/px10" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_add_medica"
+        android:layout_width="@dimen/px65"
+        android:layout_height="@dimen/px22"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@drawable/round_shape"
+        android:text="@string/submit_info"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px11" />
+
+    <TextView
+        android:id="@+id/medical_remind_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px50"
+        android:text="@string/medical_remind_info"
+        android:textColor="@color/medicalRemindInfo"
+        android:textSize="@dimen/px10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px8"
+        android:layout_marginTop="@dimen/px15"
+        android:background="@color/medicRemindLine" />
+
+    <LinearLayout
+        android:id="@+id/linear_recmond_hosp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_manuly_medical_line_two"
+        android:layout_marginTop="@dimen/px5"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/px80"
+            android:layout_height="@dimen/px1"
+            android:layout_marginLeft="@dimen/px50"
+            android:layout_marginTop="@dimen/px8"
+            android:background="@color/slowDiseaseLine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px5"
+            android:text="@string/recomend_hospital" />
+
+        <View
+            android:layout_width="@dimen/px80"
+            android:layout_height="@dimen/px1"
+            android:layout_marginLeft="@dimen/px5"
+            android:layout_marginTop="@dimen/px8"
+            android:background="@color/slowDiseaseLine" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addMedicaHospRecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_recmond_hosp"
+        android:layout_margin="@dimen/px10" />
+</LinearLayout>

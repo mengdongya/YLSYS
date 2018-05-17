@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--当前进度float值-->
+        <attr name="starStep" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CollapsibleTextView">
+        <attr name="suffixColor" format="color" />  <!--后缀颜色，也就是「显示全文」，「隐藏」这几个字的颜色-->
+        <attr name="collapsedLines" format="integer" />  <!--折叠后显示几行文字-->
+        <attr name="collapsedText" format="string" />   <!--折叠后的后缀文字，也就是「显示全文」-->
+        <attr name="expandedText" format="string" />   <!--展开后的后缀文字，也就是「隐藏」-->
+        <attr name="suffixTrigger" format="boolean" />  <!--隐藏与展示的触发事件是点击后缀还是整个 TextView-->
+    </declare-styleable>
+
+    <declare-styleable name="BGABadgeView">
+        <!-- 徽章背景色 -->
+        <attr name="badge_bgColor" format="reference|color" />
+        <!-- 徽章文本的颜色 -->
+        <attr name="badge_textColor" format="reference|color" />
+        <!-- 徽章文本字体大小 -->
+        <attr name="badge_textSize" format="reference|dimension" />
+        <!-- 徽章背景与宿主控件上下边缘间距离 -->
+        <attr name="badge_verticalMargin" format="reference|dimension" />
+        <!-- 徽章背景与宿主控件左右边缘间距离 -->
+        <attr name="badge_horizontalMargin" format="reference|dimension" />
+        <!-- 徽章文本边缘与徽章背景边缘间的距离 -->
+        <attr name="badge_padding" format="reference|dimension" />
+        <!-- 徽章在宿主控件中的位置 -->
+        <attr name="badge_gravity" format="enum">
+            <enum name="rightTop" value="0" />
+            <enum name="rightCenter" value="1" />
+            <enum name="rightBottom" value="2" />
+            <enum name="center" value="3" />
+        </attr>
+    </declare-styleable>
+
+
+    <!-- 首页"在线药店" "突发伤病"等功能条目的logo 标题 条目描述自定义属性-->
+    <declare-styleable name="HomePageView">
+        <!--标题条目logo图片-->
+        <attr name="itemLogo" format="reference" />
+        <!--标题条目名字-->
+        <attr name="itemTitle" format="string" />
+        <!--标题条目描述-->
+        <attr name="itemDesion" format="string" />
+    </declare-styleable>
+
+    <!-- 首页"去医院" "医联体医疗"条目的logo 标题 条目描述自定义属性-->
+    <declare-styleable name="HomeTopView">
+        <!--标题条目logo图片-->
+        <attr name="topLogo" format="reference" />
+        <!--标题条目名字-->
+        <attr name="topTitle" format="string" />
+        <!--标题条目描述-->
+        <attr name="topDesion" format="string" />
+    </declare-styleable>
+
+    <!--首页,我的页面"我的收藏" "我的订单"等布局的,自定义属性-->
+    <declare-styleable name="SetItemView">
+        <!--标题条目logo图片-->
+        <attr name="setItemLogo" format="reference" />
+        <!--标题条目名字-->
+        <attr name="setItemTitle" format="string" />
+    </declare-styleable>
+
+    <!--医联体医疗页面"远程诊疗" "医护签约"等布局的,自定义属性-->
+    <declare-styleable name="UnionItemView">
+        <!--标题条目logo图片-->
+        <attr name="unionItemLogo" format="reference" />
+        <!--标题条目名字-->
+        <attr name="unionItemTitle" format="string" />
+        <!--标题描述-->
+        <attr name="unionItemDescrip" format="string" />
+    </declare-styleable>
+    <!--去看病模块自定义布局的,自定义属性-->
+    <declare-styleable name="SeeDoctView">
+        <!--标题条目logo图片-->
+        <attr name="SeeDoctLogo" format="reference" />
+        <!--标题条目名字-->
+        <attr name="SeeDoctTitle" format="string" />
+        <!--标题描述-->
+        <attr name="SeeDoctDescrip" format="string" />
+    </declare-styleable>
+
+    <!-- 优生优育标签 -->
+    <declare-styleable name="FlowLayout">
+        <attr name="width_space" format="dimension"/>
+        <attr name="height_space" format="dimension"/>
+    </declare-styleable>
+
+</resources>

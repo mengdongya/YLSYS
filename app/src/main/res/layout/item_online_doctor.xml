@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px94"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/doctor_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px13"
+            android:src="@mipmap/online_doctor_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px6"
+                android:text="白求恩"
+                android:textColor="@color/mineTool"
+                android:textSize="@dimen/px13" />
+
+            <TextView
+                android:id="@+id/hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px5"
+                android:text="上海周浦医院"
+                android:textColor="@color/userPhone"
+                android:textSize="@dimen/px10" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/mark_one" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px3"
+                    android:src="@mipmap/mark_two" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px3"
+                    android:src="@mipmap/mark_three" />
+            </LinearLayout>
+
+            <store.chinaotec.com.medicalcare.view.MySetRatingBar
+                android:id="@+id/app_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px6"
+                app:starCount="5"
+                app:starEmpty="@mipmap/five_star_dark"
+                app:starFill="@mipmap/five_star_light"
+                app:starHalf="@mipmap/five_star_half"
+                app:starImageSize="@dimen/px13"
+                app:starPadding="@dimen/px2"
+                app:starStep="3.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px105"
+            android:layout_marginTop="@dimen/px45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/advisory_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/px11" />
+
+            <TextView
+                android:id="@+id/advisory_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px3"
+                android:text="@string/advisory_title"
+                android:textColor="@color/userPhone"
+                android:textSize="@dimen/px11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px1"
+        android:background="@color/mainToolLine" />
+</LinearLayout>

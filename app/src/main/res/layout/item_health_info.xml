@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dp10"
+              android:paddingLeft="@dimen/px15"
+              android:paddingRight="@dimen/dp10"
+              android:paddingTop="@dimen/dp10">
+
+    <ImageView
+        android:id="@+id/health_info_logo"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:src="@mipmap/health_advis_logo_one"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px5"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/health_big_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/toolTitle"
+            android:textSize="@dimen/middle_title_sp"
+            tools:text="养生饮食养生饮食养生饮食养生饮食养生饮食养生饮食养生饮食养生饮食养生饮食养生饮食养生饮食"/>
+
+        <TextView
+            android:id="@+id/health_small_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_title_sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

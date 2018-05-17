@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                tools:context="store.chinaotec.com.medicalcare.fragment.NoticeFragment">
+
+    <LinearLayout
+        android:id="@+id/relative_notice_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/colorTooBar"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/main_notice_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px18"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/notice_tool_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px91"
+        android:layout_below="@+id/relative_notice_title"
+        android:background="@color/noticeToolBack"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relative_apoint_regis"
+            android:layout_width="@dimen/px0"
+            android:layout_height="@dimen/px91"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/apoint_regis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px40"
+                android:layout_marginTop="@dimen/px24"
+                android:src="@mipmap/notice_apoint_regis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apoint_regis"
+                android:layout_marginLeft="@dimen/px26"
+                android:layout_marginTop="@dimen/px15"
+                android:text="@string/main_apoint_regis"
+                android:textColor="@color/toolTitle"
+                android:textSize="@dimen/px13"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_weather_remind"
+            android:layout_width="@dimen/px0"
+            android:layout_height="@dimen/px91"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/weather_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px33"
+                android:layout_marginTop="@dimen/px21"
+                android:src="@mipmap/notice_weather_remind"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weather_remind"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginTop="@dimen/px15"
+                android:text="@string/main_weather_remind"
+                android:textColor="@color/toolTitle"
+                android:textSize="@dimen/px13"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_child_care"
+            android:layout_width="@dimen/px0"
+            android:layout_height="@dimen/px91"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/child_care"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px25"
+                android:layout_marginTop="@dimen/px21"
+                android:src="@mipmap/notice_child_care"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child_care"
+                android:layout_marginLeft="@dimen/px16"
+                android:layout_marginTop="@dimen/px16"
+                android:text="@string/main_child_care"
+                android:textColor="@color/toolTitle"
+                android:textSize="@dimen/px13"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/notice_tool_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px91"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/notice_tool_one"
+        android:background="@color/noticeToolBack"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_logist_infor"
+            android:layout_width="@dimen/px0"
+            android:layout_height="@dimen/px91"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/logist_infor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px40"
+                android:layout_marginTop="@dimen/px24"
+                android:src="@mipmap/notice_logist_infor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logist_infor"
+                android:layout_marginLeft="@dimen/px26"
+                android:layout_marginTop="@dimen/px15"
+                android:text="@string/main_logist_infor"
+                android:textColor="@color/toolTitle"
+                android:textSize="@dimen/px13"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_comunity_activity"
+            android:layout_width="@dimen/px0"
+            android:layout_height="@dimen/px92"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/comunity_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px35"
+                android:layout_marginTop="@dimen/px21"
+                android:src="@mipmap/notice_comunity_activity"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comunity_activity"
+                android:layout_marginLeft="@dimen/px24"
+                android:layout_marginTop="@dimen/px15"
+                android:text="@string/main_comunity_activity"
+                android:textColor="@color/toolTitle"
+                android:textSize="@dimen/px13"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_medica_remind"
+            android:layout_width="@dimen/px0"
+            android:layout_height="@dimen/px91"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/medica_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px33"
+                android:layout_marginTop="@dimen/px21"
+                android:src="@mipmap/notice_medica_remind"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medica_remind"
+                android:layout_marginLeft="@dimen/px23"
+                android:layout_marginTop="@dimen/px15"
+                android:text="@string/main_medica_remind"
+                android:textColor="@color/toolTitle"
+                android:textSize="@dimen/px13"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_more"
+            android:layout_width="@dimen/px0"
+            android:layout_height="@dimen/px91"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/notice_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px25"
+                android:layout_marginTop="@dimen/px21"
+                android:src="@mipmap/notice_more"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notice_more"
+                android:layout_marginLeft="@dimen/px27"
+                android:layout_marginTop="@dimen/px20"
+                android:text="@string/main_more"
+                android:textColor="@color/toolTitle"
+                android:textSize="@dimen/px13"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/notice_line_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_below="@+id/notice_tool_two"
+        android:background="@color/mainToolLine"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notice_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notice_line_one"
+        android:background="@android:color/white"/>
+</RelativeLayout>

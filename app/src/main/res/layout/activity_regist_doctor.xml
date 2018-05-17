@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.RegistDoctorActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_regist_doctor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10">
+
+        <include layout="@layout/base_back"/>
+
+        <TextView
+            android:id="@+id/main_health_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px135"
+            android:text="@string/regist_doctor"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px20"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/regist_hospital_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/regist_hospital_logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px10"
+        android:gravity="center"
+        android:text="@string/regist_hospital_introduct"
+        android:textColor="@color/addMedicaContTwo"
+        android:textSize="@dimen/px12"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px93"
+        android:layout_marginTop="@dimen/px8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appoint_person"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px16"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:background="@drawable/round_shape_regist"
+            android:padding="@dimen/px2">
+
+            <EditText
+                android:id="@+id/appoint_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="林黛玉"
+                android:textColor="@color/goHospitalContTitle"
+                android:textSize="@dimen/px12"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_appoint_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px81"
+        android:layout_marginTop="@dimen/px8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appoint_time"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px16"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:background="@drawable/round_shape_regist"
+            android:padding="@dimen/px2">
+
+            <TextView
+                android:id="@+id/appoint_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/please_choose"
+                android:textColor="@color/goHospitalContTitle"
+                android:textColorHint="@color/goHospitalContTitle"
+                android:textSize="@dimen/px12"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px106"
+        android:layout_marginTop="@dimen/px8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px5"
+            android:text="@string/patient_gender"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px16"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/patient_gender_men"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_men"
+                android:textColor="@color/goHospitalContTitle"
+                android:textSize="@dimen/px12"/>
+
+            <RadioButton
+                android:id="@+id/patient_gender_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px27"
+                android:text="@string/gender_women"
+                android:textColor="@color/goHospitalContTitle"
+                android:textSize="@dimen/px12"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px81"
+        android:layout_marginTop="@dimen/px8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ID_number"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px16"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:background="@drawable/round_shape_regist"
+            android:padding="@dimen/px2">
+
+            <TextView
+                android:id="@+id/ID_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="410329188008263"
+                android:textColor="@color/goHospitalContTitle"
+                android:textSize="@dimen/px12"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px106"
+        android:layout_marginTop="@dimen/px8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/depart_ment"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px16"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:background="@drawable/round_shape_regist"
+            android:padding="@dimen/px2">
+
+            <TextView
+                android:id="@+id/depart_ment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="骨科"
+                android:textColor="@color/goHospitalContTitle"
+                android:textSize="@dimen/px12"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px106"
+        android:layout_marginTop="@dimen/px8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regist_cost"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px16"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px15"
+            android:background="@drawable/round_shape_regist"
+            android:padding="@dimen/px2">
+
+            <TextView
+                android:id="@+id/regist_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15元"
+                android:textColor="@color/colorTooBar"
+                android:textSize="@dimen/px12"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/micro_letter_pay"
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/micro_letter_pay"
+            android:text="@string/micro_letter_pay"
+            android:textSize="@dimen/px11"/>
+
+        <Button
+            android:id="@+id/ali_pay"
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ali_pay"
+            android:text="@string/ali_pay"
+            android:textSize="@dimen/px11"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px10"
+        android:background="@color/regisHospitLine"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px106"
+        android:layout_marginTop="@dimen/px8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital_name"
+            android:textColor="@color/regisHospitCont"
+            android:textSize="@dimen/px12"/>
+
+        <TextView
+            android:id="@+id/hospital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="上海解放军医院"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px16"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px106"
+        android:layout_marginTop="@dimen/px8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital_address"
+            android:textColor="@color/regisHospitCont"
+            android:textSize="@dimen/px12"/>
+
+        <TextView
+            android:id="@+id/hospital_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="上海普陀区88号"
+            android:textColor="@color/regisHospitCont"
+            android:textSize="@dimen/px14"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px106"
+        android:layout_marginTop="@dimen/px8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital_phone"
+            android:textColor="@color/regisHospitCont"
+            android:textSize="@dimen/px12"/>
+
+        <TextView
+            android:id="@+id/hospital_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:text="165656151515"
+            android:textColor="@color/regisHospitCont"
+            android:textSize="@dimen/px14"/>
+    </LinearLayout>
+</LinearLayout>

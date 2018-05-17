@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--点击按钮显示背景颜色-->
+    <selector>
+
+        <!-- 换颜色 -->
+        <item android:state_pressed="true">
+            <shape>
+                <solid android:color="@color/colorTooBarBg"/>
+            </shape>
+        </item>
+        <item>
+            <shape>
+                <!-- 背景 -->
+                <!--<solid android:color="#DA90B0" />-->
+            </shape>
+        </item>
+    </selector>
+
+</inset>

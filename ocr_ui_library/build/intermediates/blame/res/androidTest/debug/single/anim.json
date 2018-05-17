@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "E:\\HanShu_Project\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\56c713ada0091195c886f863defb47e15805f574\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "E:\\YLSYS\\ocr_ui_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\cecha\\.android\\build-cache\\6030632bfc6e072d0294aa2d27c6a82d7481c53e\\output\\res\\anim\\abc_slide_out_top.xml"
+    }
+]

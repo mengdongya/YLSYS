@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px17"
+        android:layout_marginRight="@dimen/px28"
+        android:layout_marginTop="@dimen/px5">
+
+        <TextView
+            android:id="@+id/screen_contion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医院等级"
+            android:textColor="@color/userPhone"
+            android:textSize="@dimen/px11" />
+
+        <LinearLayout
+            android:id="@+id/linear_clear_contion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cleared_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clear_contion"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/px11" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/screen_contions_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px14"
+        android:layout_marginRight="@dimen/px13" />
+</LinearLayout>

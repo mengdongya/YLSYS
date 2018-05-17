@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_lable_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_lable_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:scaleType="fitXY" />
+    <!-- android:drawablePadding="5sp" padding="@dimen/main_function_padding"-->
+
+    <!-- <TextView
+    
+    style="@style/btn_login_other"
+        android:id="@+id/tv_lable_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_color_gray"
+        android:text="@string/btn_order_query" /> -->
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_pro_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip"
+        android:text="饮料"
+        android:textColor="@color/text_color_gray"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        style="@style/common_line_horizontal"
+        android:layout_centerVertical="true"
+        android:background="@color/edit_hint_color" />
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3" />
+
+</LinearLayout>

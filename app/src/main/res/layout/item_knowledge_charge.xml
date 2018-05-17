@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px5">
+
+        <View
+            android:layout_width="@dimen/px5"
+            android:layout_height="@dimen/px5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px10"
+            android:background="@drawable/round_shape_black" />
+
+        <TextView
+            android:id="@+id/knowledge_name"
+            android:layout_width="@dimen/px0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:text="肾病九大症状!教你一招,轻松预防."
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px13" />
+
+        <ImageView
+            android:id="@+id/user_info_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px10"
+            android:src="@mipmap/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px5"
+        android:background="@color/addAddressInfoOne" />
+
+</LinearLayout>

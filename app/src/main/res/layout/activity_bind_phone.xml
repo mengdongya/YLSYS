@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="store.chinaotec.com.medicalcare.activity.BindPhoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTooBar"
+        android:padding="@dimen/px10">
+
+        <include layout="@layout/base_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="绑定手机"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px20"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px55"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px10"
+            android:text="手机号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"/>
+
+        <EditText
+            android:id="@+id/bind_phone"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="手机号"
+            android:inputType="number"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px10"
+        android:background="@color/goHopitalLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px55"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px10"
+            android:text="验证码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"/>
+
+        <EditText
+            android:id="@+id/bind_vercode"
+            android:layout_width="@dimen/px0"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="@dimen/px1"
+            android:layout_height="match_parent"
+            android:background="@color/goHopitalLine"/>
+
+        <store.chinaotec.com.medicalcare.view.TimeView
+            android:id="@+id/bind_time"
+            android:layout_width="@dimen/px70"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/text_color_txt_eval_account"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px10"
+        android:background="@color/goHopitalLine"/>
+
+    <Button
+        android:id="@+id/bind_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/round_shape_sign"
+        android:gravity="center"
+        android:text="绑定手机"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp16"/>
+</LinearLayout>

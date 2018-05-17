@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/px20"
+    android:layout_marginTop="@dimen/px10"
+    android:gravity="center|left"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/share_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宝鸡市三甲皮肤医院"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px0.5"
+        android:background="#E6E6E6" />
+</LinearLayout>
